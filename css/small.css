@@ -1,0 +1,83 @@
+@media screen and (max-width: 550px) {
+    .content-2 {
+        grid-template-columns: 10px auto 10px; 
+        grid-template-rows: 30px 1fr 1fr 1fr;  
+        margin: 10px;
+    }
+
+    .principle-header{
+        font-size: 4vw;
+        margin: 30px;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .principle-title{
+        text-align: center;
+    }
+
+    .principle-1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .principle-2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .principle-3 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .principle-1, .principle-2, .principle-3 {
+        max-width: 320px;
+        margin-top: 50px;
+    }
+
+    .principle-present {
+        font-size: 3vw;
+        margin: 3px;
+    }
+    
+    .example-link {
+        text-align: center;
+        font-size: 2vw;
+        margin:3px;
+    }
+        
+    .example-description {
+        margin: 10px;
+        font-size: 2vw;
+    }
+
+    footer {
+        font-size: 2vw;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header {
+        font-size: 2vw;
+    }
+
+    .design-header-h1 {
+        margin-left: 1vh;
+    }
+
+    .design-nav {
+        margin-left:10px;
+    }
+
+    .design-li{
+        margin-left: 1vh;
+    }
+
+}
