@@ -1,0 +1,189 @@
+.content{
+    display: grid;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lobster', cursive;
+}
+
+p, a {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #D4D8DE;
+}
+
+.logo {
+    width: 10%;
+    border-radius: 25% 25% 25% 25%;
+}
+
+header{
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #2A2B2D;
+    font-size: 2vw;
+}
+
+h1 a {
+    color: #8EE477;
+}
+
+header p {
+    color:#8EE477
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #8EE477;
+    margin: 0;
+    font-size: 2vw;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    padding: 1em;
+    margin-right: 15px;
+}
+
+li a {
+    color:  #2A2B2D;   
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: #2A2B2D;
+    color:#8EE477;
+    font-size: 2vw;
+    padding: 1%;
+}
+
+footer p a {
+    color:#8EE477;
+    font-size: 100%;
+}
+
+
+/* HOME PAGE CSS */
+.home-container {
+    display: flex;
+    margin: 8px;
+}
+
+.home-content-1, .home-content-2 {
+    background-color: #5D5D65;
+    margin: 3%;
+    justify-items: center;
+    flex: 1;
+    border-radius: 25px 25px 25px 25px;
+    color: #D4D8DE;
+    font-size: 2vw;
+}
+
+.audience-info, .home-info {
+    margin: 15px;
+}
+
+.home-info-1 {
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.logo-display {
+    border-radius: 25% 25% 25% 25%;
+    width: 50%
+}
+
+
+/* TARGET AUDIENCE CSS */
+
+.audience-container {
+    display: flex;
+}
+
+.audience-content {
+    flex: 1;
+    background-color: #5D5D65;
+    justify-items: center;
+    margin: 2%;
+    border-radius: 25px 25px 25px 25px;
+    color: #D4D8DE;
+    font-size: 2vw;
+}
+
+.audience-content-1, .color-info-title, .text-title {
+    background-color: #5D5D65;
+    padding: 10px;
+    margin: 2%;
+    color: #D4D8DE;
+    text-align: center;
+    font-size: 2.5vw;;
+    border-radius: 25px 25px 25px 25px;
+}
+
+
+/* COLOR SCHEME AND TYPOGRAPHY CSS*/
+
+.color-content, .typography-content {
+    display: flex;
+    justify-content: center;
+}
+
+.color-info-1, .color-info-2, .color-info-3, .color-info-4, .color-info-5, .text-type-1, .text-type-2, .text-type-3, .text-type-4, .text-type-5, .text-type-6 {
+    border: black;
+    border-style: solid;
+    margin-bottom: 15px;
+    background-color: #5D5D65;
+    color: #D4D8DE;
+}
+
+.color-info-1 {
+    text-align: center;
+    color:#8EE477;
+    background-color: #2A2B2D;
+}
+
+.color-info-2{
+    text-align: center;
+    color: #2A2B2D;
+    background-color: #8EE477;
+}
+
+.color-info-3{
+    background-color: #5D5D65;
+    color: #D4D8DE;
+    text-align: center;
+}
+
+.color-info-4{
+    background-color: #5D5D65;
+    color: #D4D8DE;
+    text-align: center;
+}
+
+.color-info-5 {
+    background-color: #D4D8DE;
+    color:#2A2B2D;
+    text-align: center;
+}
+
+.colors, .text-info{
+    margin: 15px;
+    font-size: 2vw;
+}
+
+.text-type-1, .text-type-2, .text-type-3, .text-type-4, .text-type-5, .text-type-6 {
+    text-align: center;
+}
+
+
+
+
+
