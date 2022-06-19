@@ -157,8 +157,14 @@ footer p a {
     color: #91CDF3;
 }
 
+@media screen and (max-width: 1000px ) {
+    .weather-summary {
+        margin-top: 0px;
+    }
+    
+}
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
     nav ul {
         flex-direction: column;
         justify-items: center;
@@ -169,5 +175,16 @@ footer p a {
         display: flex;
         flex-direction: column;
         margin:30px;
+    }
+
+    .weather-summary {
+        margin: -15px;
+    }
+
+    .weather-summary h2 {
+        font-size: 25px;
+    }
+    .weather-summary p {
+        font-size: 15px;
     }
 }
