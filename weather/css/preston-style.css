@@ -37,7 +37,7 @@ header h1 p {
 }
 
 nav ul {
-    background-color: #5D5D65;
+    background-color: #91CDF3;
     display: flex;
     list-style: none;
     justify-content: center;
@@ -51,7 +51,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #91CDF3;
+    color: #2A2B2D;
 }
 
 nav ul li:hover {
@@ -155,4 +155,19 @@ footer p {
 
 footer p a {
     color: #91CDF3;
+}
+
+
+@media screen and (max-width: 950px) {
+    nav ul {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin:30px;
+    }
 }
