@@ -1,0 +1,47 @@
+@media screen and (max-width: 750px) {
+    .navigation {
+        display: block;
+        justify-items: center;
+        text-align: center;
+        flex: 1 1 100%;
+        list-style: none;
+        justify-content: center;
+        background-color: #91CDF3;
+        padding:0;
+    }
+
+    .navigation li:first-child {
+        display: block
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+
+    li {
+        margin: 0;
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin:30px;
+    }
+
+    .weather-summary {
+        margin: -15px;
+    }
+
+    .weather-summary h2 {
+        font-size: 25px;
+    }
+    .weather-summary p {
+        font-size: 15px;
+    }
+}

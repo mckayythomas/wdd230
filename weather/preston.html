@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WeatherCheckNow.com</title>
     <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
     <link rel="stylesheet" href="css/preston-style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body>
+<body onload="toggleMenu()">
     <header class="main-header">
 
         <img class="logo" href="preston.html" src="preson-images/weatherlogo.jpg" alt="WeatherCheckNow.com logo">
@@ -22,8 +26,9 @@
     </header>
     <div class="nav">
         <nav>
-            <ul>
-                <li><a href="preston.html">Home</a></li>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="/lesson2/index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="preston.html">Soda Springs</a></li>
                 <li><a href="preston.html">Fish Haven</a></li>
