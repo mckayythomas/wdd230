@@ -1,20 +1,33 @@
-@media screen and (min-width: 750px) {
-    .navigation {
-        background-color: #91CDF3;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        justify-content: space-between;
-        padding: 0;
+@media screen and (min-width: 1000px ) {
+    .weather-summary {
+        margin-top: 0px;
+        left: 14vw;
+        top: 48vh;
+        max-width: 450px;
     }
 
+    .weather-summary-saturday {
+        margin-top: 0px;
+        left: 14vw;
+        top: 56vh;
+        max-width: 450px; 
+    }
 
-    .navigation li:first-child {
+    .contact-info br {
         display: none;
     }
 
-    .navigation li {
-        margin-left: 15px;
-        margin-right:15px;
+    .day-forcast {
+        margin: 40px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .weather-summary-saturday {
+        top: 64vh;
+    }
+
+    .weather-summary {
+        top: 56vh;
     }
 }

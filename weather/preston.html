@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="toggleMenu()">
+<body onload="toggleMenu(), pancakes()">
+    <div id="pancakes" class="pancakes">
+        <strong>Preston Pancakes in the Park!</strong>
+        <br> 9:00 a.m. Saturday at the park pavilion.
+    </div>
+
     <header class="main-header">
 
         <img class="logo" href="preston.html" src="preson-images/weatherlogo.jpg" alt="WeatherCheckNow.com logo">
@@ -29,7 +34,7 @@
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
                 <li><a href="/lesson2/index.html">Home</a></li>
-                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
                 <li><a href="preston.html">Soda Springs</a></li>
                 <li><a href="preston.html">Fish Haven</a></li>
                 <li><a href="preston.html">Storm Center</a></li>
@@ -38,30 +43,62 @@
         </nav>
     </div>
     <main class="content">
-
         <div class="page-title">
             <h1>Preston Idaho</h1>
         </div>
-        <div class="hero"><img class="hero-img" src="preson-images/weather-banner.webp" alt="Hero Image"></div>
-        <div class="weather-summary">
-            <div class="weather-summary-content">
-                <h2>Weather Summary</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+        <div class="hero"><img class="hero-img" src="preson-images/weather-banner.webp" alt="Hero Image">
+            <div id="weatherSummary" class="weather-summary">
+                <div class="weather-summary-content">
+                    <h2>Weather Summary</h2>
+                    <hr>
+                    <ul class="weather-summary-data">
+                        <li>Temp: 65°</li>
+                        <li>Humidity: 21%</li>
+                        <li>Percipitation: 0%</li>
+                        <li>Wind: 11 mph</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="five-day-forcast">
             <h2>Five Day Forcast</h2>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut
-                    aliquip ex ea commodo consequat.
-            </div>
+            <container class="five-day-forcast-data">
+                <div class="day-forcast">
+                    <h3>Sunday</h3>
+                    <img src="preson-images/sun_sign.png">
+                    <p><strong>Sunny</strong></p>
+                    <p>64° F</p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3>Monday</h3>
+                    <img src="preson-images/sun_sign.png">
+                    <p><strong>Sunny</strong></p>
+                    <p>64° F</p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3>Tuesday</h3>
+                    <img src="preson-images/sun_sign.png">
+                    <p><strong>Sunny</strong></p>
+                    <p>64° F</p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3>Wednesday</h3>
+                    <img src="preson-images/sun_sign.png">
+                    <p><strong>Sunny</strong></p>
+                    <p>64° F</p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3>Thursday</h3>
+                    <img src="preson-images/sun_sign.png">
+                    <p><strong>Sunny</strong></p>
+                    <p>64° F</p>
+                </div>
+            </container>
             </p>
         </div>
 
@@ -78,15 +115,17 @@
         </div>
 
 
-        <div class="location-map">
-            <img src="https://picsum.photos/300/200" alt="Location Map">
-        </div>
         <div class="contact-info">
             <h3>Contact Information</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</p>
+            <p>Phone: (123)-456-7890</p>
+            <p>email: weather123@weather<br>checknow.com</p>
+            <p>Address: 1234 Weather St. Preston ID, 98765 USA</p>
         </div>
+        <div class="location-map">
+            <img src="preson-images/rsz_11map.png" alt="Location Map">
+        </div>
+
+
 
     </main>
     <footer>

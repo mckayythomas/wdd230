@@ -1,6 +1,36 @@
-@media screen and (max-width: 1000px ) {
-    .weather-summary {
-        margin-top: 0px;
+@media screen and (min-width: 750px) {
+    .navigation {
+        background-color: #6320df;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 0;
     }
-    
+
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        margin-left: 15px;
+        margin-right:15px;
+    }
+
+    .weather-summary {
+        max-width: 350px;
+        left: 12vw;
+        top: 38vh;
+    }
+
+    .weather-summary-saturday {
+        max-width: 350px;
+        left:12vw;
+        top: 46vh;
+    }
+
+    .weather-summary-content {
+        background-color: #241623aa;
+    }
 }

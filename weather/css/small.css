@@ -6,12 +6,19 @@
         flex: 1 1 100%;
         list-style: none;
         justify-content: center;
-        background-color: #91CDF3;
+        background-color: #6320df;
         padding:0;
     }
 
     .navigation li:first-child {
-        display: block
+        display: block;
+        background-color: #fffcff;
+        border-style: solid;
+        
+    }
+
+    .navigation li:first-child:hover {
+        background-color: #6320df;
     }
 
     .navigation li {
@@ -23,11 +30,6 @@
     }
 
 
-    li {
-        margin: 0;
-        display: none;
-    }
-
     .content {
         display: flex;
         flex-direction: column;
@@ -36,12 +38,61 @@
 
     .weather-summary {
         margin: -15px;
+        position: static;
+        max-width: 110%;
+        padding-top: 20px;
+        
+    }
+
+    .weather-summary-saturday {
+        margin: -15px;
+        position: static;
+        max-width: 110%;  
+        padding-top: 20px;
     }
 
     .weather-summary h2 {
         font-size: 25px;
     }
-    .weather-summary p {
+    .weather-summary ul {
         font-size: 15px;
+        margin-left: -1%;
+    }
+
+    .weather-summary-saturday h2 {
+        font-size: 25px;
+    }
+    .weather-summary-saturday ul {
+        font-size: 15px;
+        margin-left: -1%;
+    }
+
+    .weather-summary-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .weather-summary-data li {
+        margin: 35px;
+    }
+
+    .contact-info p {
+        text-indent: 25px;
+    }
+
+    .contact-info br {
+        display: none;
+    }
+
+    .five-day-forcast-data {
+        flex-direction: column;
+    }
+    .day-forcast {
+        display: flex;
+        justify-content: center;
+    }
+
+    .day-forcast h3, .day-forcast p {
+        margin: 30px;
     }
 }
