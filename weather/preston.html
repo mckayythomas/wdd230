@@ -8,6 +8,7 @@
     <title>WeatherCheckNow.com</title>
     <script defer src="js/date.js"></script>
     <script src="js/menu-toggle.js"></script>
+    <script src="js/wind-chill.js"></script>
     <link rel="stylesheet" href="css/preston-style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="toggleMenu(), pancakes()">
+<body onload="toggleMenu(), pancakes(), windChill()">
     <div id="pancakes" class="pancakes">
         <strong>Preston Pancakes in the Park!</strong>
         <br> 9:00 a.m. Saturday at the park pavilion.
@@ -23,11 +24,12 @@
 
     <header class="main-header">
 
-        <img class="logo" href="preston.html" src="preson-images/weatherlogo.jpg" alt="WeatherCheckNow.com logo">
-
-        <h1>WeatherCheckNow.com<p>"Accurate Weather Anytime, Everytime."</p>
-
-        </h1>
+        <figure class="logo"><img src="preson-images/weatherlogo.jpg"
+                alt="WeatherCheckNow.com logo"></figure>
+        <div>    
+        <h1>WeatherCheckNow.com</h1>
+        <p>"Accurate Weather Anytime, Everytime."</p>
+    </div>
     </header>
     <div class="nav">
         <nav>
@@ -46,16 +48,21 @@
         <div class="page-title">
             <h1>Preston Idaho</h1>
         </div>
-        <div class="hero"><img class="hero-img" src="preson-images/weather-banner.webp" alt="Hero Image">
+        <div class="hero">
+            <figure>
+                <img class="hero-img" src="preson-images/wdd230_image_franklinOriginal.jpeg" sizes="100vw"
+                srcset="preson-images/hero_img_1100.jpeg 1100w, preson-images/hero_img_800.jpeg 800w, preson-images/hero_img_400.jpeg 400w" alt="Hero Image">
+            </figure>
             <div id="weatherSummary" class="weather-summary">
                 <div class="weather-summary-content">
                     <h2>Weather Summary</h2>
                     <hr>
                     <ul class="weather-summary-data">
-                        <li>Temp: 65°</li>
-                        <li>Humidity: 21%</li>
-                        <li>Percipitation: 0%</li>
-                        <li>Wind: 11 mph</li>
+                        <li>Temp:<br class="hidden"> <span id="temp">46</span>°</li>
+                        <li>Humidity:<br class="hidden"> 21%</li>
+                        <li>Percipitation:<br class="hidden"> 0%</li>
+                        <li>Wind:<br class="hidden"> <span id="windSpeed">11</span> mph</li>
+                        <li>Wind Chill:<br class="hidden"> <span id="windChill"></span> mph</li>
                     </ul>
                 </div>
             </div>
@@ -63,43 +70,52 @@
 
         <div class="five-day-forcast">
             <h2>Five Day Forcast</h2>
-            <container class="five-day-forcast-data">
+            <div class="five-day-forcast-data">
                 <div class="day-forcast">
                     <h3>Sunday</h3>
-                    <img src="preson-images/sun_sign.png">
-                    <p><strong>Sunny</strong></p>
+                    <div>
+                        <img src="preson-images/sun_sign.png" alt="Weather img">
+                        <p><strong>Sunny</strong></p>
+                    </div>
                     <p>64° F</p>
                 </div>
 
                 <div class="day-forcast">
                     <h3>Monday</h3>
-                    <img src="preson-images/sun_sign.png">
-                    <p><strong>Sunny</strong></p>
+                    <div>
+                        <img src="preson-images/sun_sign.png" alt="Weather img">
+                        <p><strong>Sunny</strong></p>
+                    </div>
                     <p>64° F</p>
                 </div>
 
                 <div class="day-forcast">
                     <h3>Tuesday</h3>
-                    <img src="preson-images/sun_sign.png">
-                    <p><strong>Sunny</strong></p>
+                    <div>
+                        <img src="preson-images/sun_sign.png" alt="Weather img">
+                        <p><strong>Sunny</strong></p>
+                    </div>
                     <p>64° F</p>
                 </div>
 
                 <div class="day-forcast">
                     <h3>Wednesday</h3>
-                    <img src="preson-images/sun_sign.png">
-                    <p><strong>Sunny</strong></p>
+                    <div>
+                        <img src="preson-images/sun_sign.png" alt="Weather img">
+                        <p><strong>Sunny</strong></p>
+                    </div>
                     <p>64° F</p>
                 </div>
 
                 <div class="day-forcast">
                     <h3>Thursday</h3>
-                    <img src="preson-images/sun_sign.png">
-                    <p><strong>Sunny</strong></p>
+                    <div>
+                        <img src="preson-images/sun_sign.png" alt="Weather img">
+                        <p><strong>Sunny</strong></p>
+                    </div>
                     <p>64° F</p>
                 </div>
-            </container>
-            </p>
+            </div>
         </div>
 
         <div class="article">
