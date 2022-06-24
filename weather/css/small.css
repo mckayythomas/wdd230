@@ -1,4 +1,12 @@
 @media screen and (max-width: 750px) {
+    header div  {
+        margin-top: -10px;
+    }
+
+    header div p {
+        margin-top: -20px;
+    }
+    
     .navigation {
         display: block;
         justify-items: center;
@@ -13,12 +21,19 @@
     .navigation li:first-child {
         display: block;
         background-color: #fffcff;
-        border-style: solid;
-        
+        border-style: solid; 
+    }
+
+    .navigation li:first-child a {
+        color:black;
     }
 
     .navigation li:first-child:hover {
         background-color: #6320df;
+    }
+
+    .navigation li:first-child a:hover {
+        color: #fffcff;
     }
 
     .navigation li {
@@ -69,7 +84,7 @@
 
     .weather-summary-data {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .weather-summary-data li {
@@ -94,5 +109,28 @@
 
     .day-forcast h3, .day-forcast p {
         margin: 30px;
+    }
+
+    .day-forcast div p{
+        margin-top: -8px;
+    }
+}
+
+
+@media screen and (max-height: 300px) {
+    .weather-summary {
+        top: 118vh;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .weather-summary {
+        top: 98vh;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    .weather-summary {
+        top: 68vh;
     }
 }

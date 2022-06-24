@@ -1,4 +1,7 @@
 @media screen and (min-width: 750px) {
+    header div p {
+        margin-top: -20px;
+    }
     .navigation {
         background-color: #6320df;
         display: flex;
@@ -20,17 +23,21 @@
 
     .weather-summary {
         max-width: 350px;
-        left: 12vw;
-        top: 38vh;
+        left: 14vw;
+        top: 46vh;
     }
 
     .weather-summary-saturday {
         max-width: 350px;
-        left:12vw;
-        top: 46vh;
+        left:14vw;
+        top: 60vh;
     }
 
     .weather-summary-content {
         background-color: #241623aa;
+    }
+
+    .hidden {
+        display: none;
     }
 }

@@ -30,21 +30,25 @@ header {
     padding: 20px
 }
 
-.logo {
+.logo img {
     border-radius: 50% 50% 50% 50%;
-    width: 10%;
-    height: 10%;
+    width: 10vw;
 }
 
-header h1 {
+header div h1 {
     margin: 20px;
     font-size: 3vw;
     color: #f18f01;
 }
 
-header h1 p {
+header div p {
     font-weight: 200;
-    font-size: 1.5vw;
+    font-size: 2vw;
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: -12px;
+    color: #f18f01;
+
 }
 
 nav ul li {
@@ -60,7 +64,6 @@ nav ul li a {
 nav ul li:hover {
     background-color: #fffcff;
 }
-
 
 .content {
     display: grid;
@@ -87,8 +90,6 @@ nav ul li:hover {
 }
 
 .weather-summary {
-    grid-column: 2/5;
-    grid-row: 2/3;
     z-index: 1;
     margin: 30px;
     position:absolute;
@@ -193,7 +194,7 @@ nav ul li:hover {
 footer {
     text-align: center;
     background-color: #241623;
-    color: #6320df;
+    color: #f18f01;
     font-size: 2vw;
     padding: 1%;
 }
@@ -203,7 +204,7 @@ footer p {
 }
 
 footer p a {
-    color: #6320df;
+    color: #f18f01;
 }
 
 .active {
