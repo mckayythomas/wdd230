@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(52, 52, 52);
+    align-items: center;
+}
+
+h1 {
+    color:white;
+}
+
+img {
+    border-style: groove;
+}
+
+picture {
+    margin: 20px;
+}
+
