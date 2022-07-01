@@ -40,4 +40,74 @@
     .hidden {
         display: none;
     }
+
+
+    /* Gallery CSS Medium */
+    .gallery-content {
+        grid-template-columns: .1fr 1fr 1fr .1fr;
+    }
+
+    .gallery-title {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        text-align: center;
+    }
+    
+    .gallery-title h1 {
+        font-size: 80px;
+    }
+        
+    .gallery-image-1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .gallery-image-2 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .gallery-image-3 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .gallery-image-4 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    
+    .gallery-image-5 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    
+    .gallery-image-6 {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    
+    .gallery-image-7 {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-image-8 {
+        grid-column: 3/4;
+        grid-row: 5/6;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-image-9 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        margin-bottom: 20px;
+    }
+    
+    .weather-pic {
+        width: 100%;
+    }
+    
+
 }
