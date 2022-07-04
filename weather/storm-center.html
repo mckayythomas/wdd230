@@ -50,32 +50,32 @@
         <form class="form" action="thanks.html">
 
             <div class="full-name">
-                <label for="fname">Full Name:</label>
+                <label for="fname">Full Name:</label><br class="hidden">
                 <input type="text" id="fname" name="fname" maxlength="5">
             </div>
 
             <div class="email">
-                <label for="email">Email Address:</label>
+                <label for="email">Email Address:</label><br class="hidden">
                 <input type="email" id="email" name="email" placeholder="first.lastname@weather.com">
             </div>
 
             <div class="phone">
-                <label for="phone">Phone Number:</label>
+                <label for="phone">Phone Number:</label><br class="hidden">
                 <input type="tel" id="phone" name="phone" required>
             </div>
 
             <div class="zip-code">
-                <label for="zip-code">Zip Code:</label><br>
+                <label for="zip-code">Zip Code:</label><br class="hidden">
                 <input type="number" id="zip-code" name="zip-code" required>
             </div>
 
             <div class="storm-date">
-                <label for="storm-date">Storm Date:</label><br>
+                <label for="storm-date">Storm Date:</label><br class="hidden">
                 <input type="date" id="storm-date" name="storm-date">
             </div>
 
             <div class="storm-type">
-                <label for="storm-type">Storm Type:</label>
+                <label for="storm-type">Storm Type:</label><br class="hidden">
                 <input list="storm-types" id="strorm-type" name="storm-type">
                 <datalist id="storm-types">
                     <option value="Flash Flood"></option>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="severity">
-                <label for="storm-severity">Storm Severity (from 1 to 10):</label>
+                <label for="storm-severity">Storm Severity (from 1 to 10):</label><br class="hidden">
                 <input type="range" id="storm-severity" list="labels" name="storm-severity" min="1" max="10">
                 <datalist id="labels">
                     <option value="0" label="1">1</option>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="region">
-                <label for="storm-region">Storm Region:</label>
+                <label for="storm-region">Storm Region:</label><br class="hidden">
                 <select name="storm-region" id="region">
                     <option disabled="" selected>-- Select Region --</option>
                     <option value="Preston">Preston</option>
@@ -106,7 +106,7 @@
             </div>
 
             <div class="danger">
-                <p>User Currently in Danger:</p>
+                <p>User Currently in Danger:</p><br class="hidden">
                 <input type="radio" id="no" name="in-danger" value="No">
                 <label class="no" for="no">No</label>
                 <input type="radio" id="yes" name="in-danger" value="Yes">
@@ -114,12 +114,12 @@
             </div>
 
             <div class="additional-comments">
-                <label for="addition-comments">Additional Comments</label>
+                <label for="addition-comments">Additional Comments:</label><br>
                 <input class="textarea" type="textarea" name="additional-comments" row="100" cols="500">
             </div>
 
             <div class="submit">
-                <label for="submit"><strong>Submit Form</strong></label>
+                <label for="submit"><strong>Submit Form</strong></label><br class="hidden">
                 <input type="submit" name="submit">
             </div>
         </form>

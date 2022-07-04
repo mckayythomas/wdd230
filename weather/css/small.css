@@ -137,9 +137,7 @@
     /* FORM CSS SMALL */
 
     .form-content {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 100px 0px 100px
+        margin: 0px 100px 0px 100px;
     }
     
     .form-content h1 {
@@ -150,6 +148,8 @@
     .form {
         display:flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .form label, .form input, .form option, .form p {
@@ -159,9 +159,13 @@
     .thankyou {
         margin: 200px 100px 200px 100px;
     }
-
 }
 
+@media screen and (min-width: 600px) {
+    .hidden {
+        display: none;
+    }
+}
 
 @media screen and (max-height: 300px) {
     .weather-summary {
