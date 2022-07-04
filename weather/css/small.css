@@ -134,7 +134,31 @@
         width: 300px;
     }
 
+    /* FORM CSS SMALL */
 
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 100px 0px 100px
+    }
+    
+    .form-content h1 {
+        text-align: center;
+        
+    }
+    
+    .form {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .form label, .form input, .form option, .form p {
+        margin:10px;
+    }
+
+    .thankyou {
+        margin: 200px 100px 200px 100px;
+    }
 
 }
 

@@ -287,6 +287,87 @@ nav ul li:hover {
 }
 
 
+/* FORM CSS */
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.form-title {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.full-name {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.phone {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.zip-code {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.storm-date {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.storm-type {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.severity {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.region {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.danger {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.additional-comments{
+    grid-column: 3/4;
+    grid-row: 6/8;
+}
+
+.submit {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.textarea {
+    width: 220px;
+    height: 100px;
+}
+
+/* Thanks Form Submission CSS */
+.thankyou {
+    text-align: center;
+    margin: 200px
+}
+
 footer {
     text-align: center;
     background-color: #241623;
