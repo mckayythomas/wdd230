@@ -29,7 +29,12 @@ body {
     max-width: 23%;
     margin: 30px;
     border-style: solid;
-    box-shadow: 0 0 50px #9F0015;
+    box-shadow: 0 0 65px #9f0015;
+
+}
+
+.cards section:hover {
+    box-shadow: 0 10px 100px #e7e7e7;
 }
 
 h2 {
