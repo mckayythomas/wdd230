@@ -26,7 +26,7 @@ body {
 .cards section {
     background-image: linear-gradient(#050505, #9F0015, #e7e7e7);    
     border-radius: 50px 50px 50px 50px;
-    max-width: 20%;
+    max-width: 23%;
     margin: 30px;
     border-style: solid;
     box-shadow: 0 0 50px #9F0015;
@@ -64,7 +64,7 @@ footer {
     font-size: 2em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
     .cards {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -87,4 +87,10 @@ footer {
     footer {
         font-size: 1.5em;
     }
+}
+
+@media screen  and (min-width: 1200px){
+    .cards section {
+        max-width: 18%;
+    }    
 }
