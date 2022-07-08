@@ -388,3 +388,81 @@ footer p a {
     background-color: #fdca40;
 }
 
+/* Home page general css */
+
+.towns {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 80px;
+}
+
+.soda-springs-div {
+    background-color: #241623;
+    padding: 30px;
+}
+
+.soda-springs-div h5, .soda-springs-div p {
+    margin: 5px;
+}
+
+.soda-springs-div h3 {
+    color: #f18f01;
+    font-size: 1.5em;
+}
+
+.soda-springs-div h5 {
+    color: #fdca40;
+}
+
+.soda-springs-div p {
+    color: #fffcff;
+}
+
+.fish-haven-div {
+    background-color: #241623;
+    padding: 30px;
+}
+
+.fish-haven-div h5, .fish-haven-div p {
+    margin: 5px;
+}
+
+.fish-haven-div h3 {
+    color: #f18f01;
+    font-size: 1.5em;
+}
+
+.fish-haven-div h5 {
+    color: #fdca40;
+}
+
+.fish-haven-div p {
+    color: #fffcff;
+}
+
+.preston-div {
+    background-color: #241623;
+    padding: 30px;
+}
+
+.preston-div h5, .preston-div p {
+    margin: 5px;
+}
+
+.preston-div h3 {
+    color: #f18f01;
+    font-size: 1.5em;
+}
+
+.preston-div h5 {
+    color: #fdca40;
+}
+
+.preston-div p {
+    color: #fffcff;
+}
+
+
+
+
+
+

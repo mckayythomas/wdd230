@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you!</title>
+    <title>Home</title>
+    <script src ="js/towns.js"></script>
     <script defer src="js/date.js"></script>
     <script src="js/menu-toggle.js"></script>
     <link rel="stylesheet" href="css/preston-style.css">
@@ -16,7 +17,7 @@
 
 </head>
 
-<body onload="toggleMenu(), pancakes(), windChill()">
+<body onload="toggleMenu(), pancakes()">
     <div id="pancakes" class="pancakes">
         <strong>Preston Pancakes in the Park!</strong>
         <br> 9:00 a.m. Saturday at the park pavilion.
@@ -34,28 +35,23 @@
         <nav>
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="preston.html">Soda Springs</a></li>
                 <li><a href="preston.html">Fish Haven</a></li>
-                <li class="active"><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="storm-center.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallary</a></li>
             </ul>
         </nav>
     </div>
-
-    <main class="thankyou">
-        <div>
-            <h1>Thank you for your Submission!</h1>
-            <p><a href="storm-center.html">Click Here to Submit Another Report</a></p>
-        </div>
+    <main class="towns">
+        
     </main>
     <footer>
         <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a class="link-white"
                 href="index.html">WeatherCheckNow.com</a> | BYU-Idaho</p>
         <p id="datemod"></p>
     </footer>
-
 </body>
 
 </html>

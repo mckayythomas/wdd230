@@ -161,6 +161,31 @@
     }
 }
 
+    /* Home Page CSS */
+@media screen and (max-width: 650px) {
+    .towns {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .soda-springs, .preston, .fish-haven {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .soda-springs-div-img img, .preston-div-img img, .fish-haven-div-img img {
+        max-width: 100%;
+    }
+
+    .soda-springs-div, .preston-div , .fish-haven-div {
+        margin-top: -4px;
+        text-align: center;
+        font-size: 3vw;
+    }
+}    
+
 @media screen and (min-width: 600px) {
     .hidden {
         display: none;

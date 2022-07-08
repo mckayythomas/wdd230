@@ -108,6 +108,93 @@
     .weather-pic {
         width: 100%;
     }
+}
+
+    /* Home CSS medium View */
+@media screen and (min-width: 650px){
+    .towns {
+        row-gap: 50px;
+        margin: 50px 0 50px 0;
+    }
+
+    .soda-springs {
+        grid-column: 2/5;
+        grid-row: 1;
+        display: flex;
+        align-items: center;   
+    }
+
+    .soda-springs-div {
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        flex: 1;      
+
+    }
+
+    .soda-springs-div-img {
+        max-width: 60%;
+    }
+
+    .soda-springs-div-img img {
+        max-width: 100%;
+    }
     
+    .fish-haven {
+        grid-column: 2/5;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .fish-haven-div {
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        flex: 1;      
+    }
+
+    .fish-haven-div-img {
+        max-width: 60%;
+    }
+
+    .fish-haven-div-img img {
+        max-width: 100%;
+    }
+
+    .preston {
+        grid-column: 2/5;
+        grid-row: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    .preston-div {
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+        flex: 1;      
+    }
+
+    .preston-div-img {
+        max-width: 60%;
+    }
+
+    .preston-div-img img {
+        max-width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .fish-haven-div, .preston-div, .soda-springs-div {
+        font-size: 1.5vw;
+    }
+
+    .soda-springs-div h5 {
+        font-size: 70%;
+    }
+
 
 }
