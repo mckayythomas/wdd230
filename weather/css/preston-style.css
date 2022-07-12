@@ -461,6 +461,16 @@ footer p a {
     color: #fffcff;
 }
 
+.attributions {
+    text-align: center;
+    margin: 20vh 0 20vh 0;
+    font-size: 3vw;
+}
+
+.attributions ul {
+    list-style: none;
+
+}
 
 
 
