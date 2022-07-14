@@ -88,7 +88,7 @@
     }
 
     .weather-summary-data li {
-        margin: 35px;
+        margin: 30px 0px 30px 0px
     }
 
     .contact-info p {
@@ -108,11 +108,7 @@
     }
 
     .day-forcast h3, .day-forcast p {
-        margin: 30px;
-    }
-
-    .day-forcast div p{
-        margin-top: -8px;
+        margin: 27px;
     }
 
 /* gallery CSS small */
