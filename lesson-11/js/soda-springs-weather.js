@@ -26,45 +26,57 @@ const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?lat=42.6544&
 fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //run loop to display 5 day forcast
-        let dayIndex = 1;
+        let divFiveDay = document.createElement('div');
+        document.querySelector('div.five-day-forcast').appendChild(divFiveDay);
+        divFiveDay.setAttribute('class', 'five-day-forcast-data');
         for (let i = 0; i < 40; i++) {
             let timeCheck = '18:00:00'
             if (jsObject.list[i].dt_txt.includes(timeCheck)) {
                 let weekday = new Date(jsObject.list[i].dt_txt).toLocaleString('en-us', { weekday: 'long' });
                 //console.log(weekday);
-                let dayId = String('day' + dayIndex);
-                let dayTempId = String('day' + dayIndex + '-temp');
-                let dayConditionId = String('day' + dayIndex + '-condition');
-                let dayImageId = String('day' + dayIndex + '-img');
                 let imgSRC = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png'
+                //make elements and create classes if needed
+                let divDay = document.createElement('div');
+                divDay.setAttribute('class', 'day-forcast');
+                let h3 = document.createElement('h3');
+                let divImg = document.createElement('div');
+                let img = document.createElement('img');
+                let p1 = document.createElement('p');
+                let strong = document.createElement('strong');
+                let p2 = document.createElement('p');
 
-                document.getElementById(dayId).innerText = weekday;
-                document.getElementById(dayTempId).innerText = jsObject.list[i].main.temp.toFixed(0) + '° F';
-                document.getElementById(dayConditionId).innerText = jsObject.list[i].weather[0].main;
-                document.getElementById(dayImageId).setAttribute('src', imgSRC)
+                //text content
+                h3.textContent = weekday;
+                img.setAttribute('src', imgSRC);
+                img.setAttribute('alt', 'Weather Icon');
+                strong.textContent = jsObject.list[i].weather[0].main;
+                p2.textContent = jsObject.list[i].main.temp.toFixed(0) + '° F';
 
-                //console.log(dayClass, dayTempClass, dayConditionClass);
-                dayIndex += 1;
+                //append elements
+                document.querySelector('div.five-day-forcast-data').appendChild(divDay);
+                divDay.appendChild(h3);
+                divDay.appendChild(divImg);
+                divDay.appendChild(img);
+                divImg.appendChild(p1);
+                p1.appendChild(strong);
+                divDay.appendChild(p2);
 
-
-
-
-            }   
+            }
         }
     });
 
-    const townApi = 'https://byui-cit230.github.io/weather/data/towndata.json'
+const townApi = 'https://byui-cit230.github.io/weather/data/towndata.json'
 
-    fetch(townApi)
-      .then(function (response) {
+fetch(townApi)
+    .then(function (response) {
         return response.json();
-      })
-      .then(function (jsonObject) {
+    })
+    .then(function (jsonObject) {
         console.table(jsonObject);  // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
-    
+
         SODA_SPRINGS_INDEX = 0;
         // create elements 
         let card = document.createElement('div');
@@ -73,7 +85,7 @@ fetch(forcastURL)
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
-    
+
         // Append elements
         document.querySelector('div.town-events').appendChild(card)
         card.appendChild(h2);
@@ -81,10 +93,10 @@ fetch(forcastURL)
         card.appendChild(p1);
         card.appendChild(p2);
         card.appendChild(p3);
-    
+
         // create text content
         h2.textContent = 'Upcoming Events:';
         p1.textContent = towns[SODA_SPRINGS_INDEX].events[0];
         p2.textContent = towns[SODA_SPRINGS_INDEX].events[1];
         p3.textContent = towns[SODA_SPRINGS_INDEX].events[2];
-      });
+    });

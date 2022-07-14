@@ -77,7 +77,7 @@
 
             <div class="storm-type">
                 <label for="storm-type">Storm Type:</label><br class="hidden">
-                <input list="storm-types" id="strorm-type" name="storm-type">
+                <input list="storm-types" id="storm-type" name="storm-type">
                 <datalist id="storm-types">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -98,7 +98,7 @@
 
             <div class="region">
                 <label for="storm-region">Storm Region:</label><br class="hidden">
-                <select name="storm-region" id="region">
+                <select name="storm-region" id="storm-region">
                     <option disabled="" selected>-- Select Region --</option>
                     <option value="Preston">Preston</option>
                     <option value="Soda-Springs">Soda Springs</option>
@@ -116,12 +116,12 @@
 
             <div class="additional-comments">
                 <label for="addition-comments">Additional Comments:</label><br>
-                <input class="textarea" type="textarea" name="additional-comments" row="100" cols="500">
+                <textarea id="addition-comments" class="textarea" name="additional-comments"></textarea>
             </div>
 
             <div class="submit">
                 <label for="submit"><strong>Submit Form</strong></label><br class="hidden">
-                <input type="submit" name="submit">
+                <input type="submit" name="submit" id="submit">
             </div>
         </form>
 

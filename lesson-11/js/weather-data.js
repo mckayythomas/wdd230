@@ -26,31 +26,43 @@ const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&c
 fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //run loop to display 5 day forcast
-        let dayIndex = 1;
+        let divFiveDay = document.createElement('div');
+        document.querySelector('div.five-day-forcast').appendChild(divFiveDay);
+        divFiveDay.setAttribute('class', 'five-day-forcast-data');
         for (let i = 0; i < 40; i++) {
             let timeCheck = '18:00:00'
             if (jsObject.list[i].dt_txt.includes(timeCheck)) {
                 let weekday = new Date(jsObject.list[i].dt_txt).toLocaleString('en-us', { weekday: 'long' });
                 //console.log(weekday);
-                let dayId = String('day' + dayIndex);
-                let dayTempId = String('day' + dayIndex + '-temp');
-                let dayConditionId = String('day' + dayIndex + '-condition');
-                let dayImageId = String('day' + dayIndex + '-img');
                 let imgSRC = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png'
 
-                document.getElementById(dayId).innerText = weekday;
-                document.getElementById(dayTempId).innerText = jsObject.list[i].main.temp.toFixed(0) + '° F';
-                document.getElementById(dayConditionId).innerText = jsObject.list[i].weather[0].main;
-                document.getElementById(dayImageId).setAttribute('src', imgSRC)
+                //make elements and create classes if needed
+                let divDay = document.createElement('div');
+                divDay.setAttribute('class', 'day-forcast');
+                let h3 = document.createElement('h3');
+                let divImg = document.createElement('div');
+                let img = document.createElement('img');
+                let p1 = document.createElement('p');
+                let strong = document.createElement('strong');
+                let p2 = document.createElement('p');
+              
+                //text content
+                h3.textContent = weekday;
+                img.setAttribute('src', imgSRC);
+                img.setAttribute('alt', 'Weather Icon');
+                strong.textContent = jsObject.list[i].weather[0].main;
+                p2.textContent = jsObject.list[i].main.temp.toFixed(0) + '° F';
 
-                //console.log(dayClass, dayTempClass, dayConditionClass);
-                dayIndex += 1;
-
-
-
-
+                //append elements
+                document.querySelector('div.five-day-forcast-data').appendChild(divDay);
+                divDay.appendChild(h3);
+                divDay.appendChild(divImg);
+                divDay.appendChild(img);
+                divImg.appendChild(p1);
+                p1.appendChild(strong);
+                divDay.appendChild(p2);
             }   
         }
     });
