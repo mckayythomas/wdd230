@@ -58,11 +58,15 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #241623;
+    color: #fffcff;
 }
 
 nav ul li:hover {
     background-color: #fffcff;
+}
+
+nav ul li:hover a {
+    color: #241623;
 }
 
 .content {
@@ -485,6 +489,11 @@ footer p a {
 
 .active {
     background-color: #fdca40;
+}
+
+.active a {
+    color: #241623;
+
 }
 
 
