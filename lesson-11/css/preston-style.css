@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Inter:wght@300&display=swap');
-
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fascinate', cursive;
+    font-family: 'Fascinate Inline', cursive;
 }
 
 *, p {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -59,6 +57,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fffcff;
+    font-family: 'Righteous', cursive;
 }
 
 nav ul li:hover {
@@ -492,8 +491,7 @@ footer p a {
 }
 
 .active a {
-    color: #241623;
-
+        color: #241623;
 }
 
 
