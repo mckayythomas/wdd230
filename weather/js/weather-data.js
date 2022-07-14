@@ -3,7 +3,7 @@ const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
 
         document.getElementById('temp').textContent = jsObject.main.temp.toFixed(0);
         document.getElementById('humidity').textContent = ' ' + jsObject.main.humidity + '%';
@@ -26,7 +26,7 @@ const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&c
 fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //run loop to display 5 day forcast
         let dayIndex = 1;
         for (let i = 0; i < 40; i++) {
@@ -62,7 +62,7 @@ fetch(townApi)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
 
     PRESTON_INDEX = 6;

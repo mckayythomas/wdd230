@@ -1,0 +1,211 @@
+@media screen and (max-width: 750px) {
+    header div  {
+        margin-top: -10px;
+    }
+
+    header div p {
+        margin-top: -20px;
+    }
+    
+    .navigation {
+        display: block;
+        justify-items: center;
+        text-align: center;
+        flex: 1 1 100%;
+        list-style: none;
+        justify-content: center;
+        background-color: #6320df;
+        padding:0;
+    }
+
+    .navigation li:first-child {
+        display: block;
+        background-color: #fffcff;
+        border-style: solid; 
+    }
+
+    .navigation li:first-child a {
+        color:black;
+    }
+
+    .navigation li:first-child:hover {
+        background-color: #6320df;
+    }
+
+    .navigation li:first-child a:hover {
+        color: #fffcff;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin:30px;
+    }
+
+    .weather-summary {
+        margin: -15px;
+        position: static;
+        max-width: 110%;
+        padding-top: 20px;
+        
+    }
+
+    .weather-summary-saturday {
+        margin: -15px;
+        position: static;
+        max-width: 110%;  
+        padding-top: 20px;
+    }
+
+    .weather-summary h2 {
+        font-size: 25px;
+    }
+    .weather-summary ul {
+        font-size: 15px;
+        margin-left: -1%;
+    }
+
+    .weather-summary-saturday h2 {
+        font-size: 25px;
+    }
+    .weather-summary-saturday ul {
+        font-size: 15px;
+        margin-left: -1%;
+    }
+
+    .weather-summary-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .weather-summary-data li {
+        margin: 35px;
+    }
+
+    .contact-info p {
+        text-indent: 25px;
+    }
+
+    .contact-info br {
+        display: none;
+    }
+
+    .five-day-forcast-data {
+        flex-direction: column;
+    }
+    .day-forcast {
+        display: flex;
+        justify-content: center;
+    }
+
+    .day-forcast h3, .day-forcast p {
+        margin: 30px;
+    }
+
+    .day-forcast div p{
+        margin-top: -8px;
+    }
+
+/* gallery CSS small */
+    .gallery-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-image-1 , .gallery-image-2,
+    .gallery-image-3, .gallery-image-4,
+    .gallery-image-5, .gallery-image-6,
+    .gallery-image-7, .gallery-image-8,
+    .gallery-image-9 {
+        text-align: center;
+    }
+
+    .weather-pic {
+        width: 300px;
+    }
+
+    /* FORM CSS SMALL */
+
+    .form-content {
+        margin: 0px 100px 0px 100px;
+    }
+    
+    .form-content h1 {
+        text-align: center;
+        
+    }
+    
+    .form {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form label, .form input, .form option, .form p {
+        margin:10px;
+    }
+
+    .thankyou {
+        margin: 200px 100px 200px 100px;
+    }
+}
+
+    /* Home Page CSS */
+@media screen and (max-width: 650px) {
+    .towns {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .soda-springs, .preston, .fish-haven {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .soda-springs-div-img img, .preston-div-img img, .fish-haven-div-img img {
+        max-width: 100%;
+    }
+
+    .soda-springs-div, .preston-div , .fish-haven-div {
+        margin-top: -4px;
+        text-align: center;
+        font-size: 3vw;
+    }
+}    
+
+@media screen and (min-width: 600px) {
+    .hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .weather-summary {
+        top: 118vh;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .weather-summary {
+        top: 98vh;
+    }
+}
+
+@media screen and (max-height: 520px) {
+    .weather-summary {
+        top: 68vh;
+    }
+}

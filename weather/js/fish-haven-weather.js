@@ -3,7 +3,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0372&lon=
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
 
         document.getElementById('temp').textContent = jsObject.main.temp.toFixed(0);
         document.getElementById('humidity').textContent = ' ' + jsObject.main.humidity + '%';
@@ -26,7 +26,7 @@ const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?lat=42.0372&
 fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //run loop to display 5 day forcast
         let dayIndex = 1;
         for (let i = 0; i < 40; i++) {
@@ -58,7 +58,7 @@ fetch(forcastURL)
         return response.json();
       })
       .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        //console.table(jsonObject);  // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
     
         FISH_HAVEN_INDEX = 2;

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>WeatherCheckNow.com</title>
+    <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/weather-data.js"></script>
+    <link rel="stylesheet" href="css/preston-style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="toggleMenu(), pancakes()">
+    <div id="pancakes" class="pancakes">
+        <strong>Preston Pancakes in the Park!</strong>
+        <br> 9:00 a.m. Saturday at the park pavilion.
+    </div>
+
+    <header class="main-header">
+
+        <figure class="logo"><a href="index.html"><img src="preson-images/weatherlogo.jpg"
+            alt="WeatherCheckNow.com logo"></a></figure>
+    <div>
+            <h1>WeatherCheckNow.com</h1>
+            <p>"Accurate Weather Anytime, Everytime."</p>
+        </div>
+    </header>
+    <div class="nav">
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="content">
+        <div class="page-title">
+            <h1>Preston Idaho</h1>
+        </div>
+        <div class="hero">
+            <figure>
+                <img class="hero-img" src="preson-images/wdd230_image_franklinOriginal.jpeg" sizes="100vw"
+                    srcset="preson-images/hero_img_1100.jpeg 1100w, preson-images/hero_img_800.jpeg 800w, preson-images/hero_img_400.jpeg 400w"
+                    alt="Picture of Preston Idaho">
+            </figure>
+            <div id="weatherSummary" class="weather-summary">
+                <div class="weather-summary-content">
+                    <h2>Weather Summary</h2>
+                    <hr>
+                    <ul class="weather-summary-data">
+                        <li>Currently:<br class="hidden2"><span id="condition"></span></li>
+                        <li>Temp:<br class="hidden2"> <span id="temp"></span>°</li>
+                        <li>Humidity:<br class="hidden2"><span id="humidity"> </span></li>
+                        <li>Wind:<br class="hidden2"> <span id="windSpeed"></span> mph</li>
+                        <li>Wind Chill:<br class="hidden2"> <span id="windChill"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="five-day-forcast">
+            <h2>Five Day Forcast</h2>
+            <div class="five-day-forcast-data">
+                <div class="day-forcast">
+                    <h3 id="day1"></h3>
+                    <div>
+                        <img id="day1-img" alt="Weather img">
+                        <p><strong id="day1-condition"></strong></p>
+                    </div>
+                    <p id="day1-temp"></p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3 id="day2"></h3>
+                    <div>
+                        <img id="day2-img" alt="Weather img">
+                        <p><strong id="day2-condition"></strong></p>
+                    </div>
+                    <p id="day2-temp"></p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3 id="day3"></h3>
+                    <div>
+                        <img id="day3-img" alt="Weather img">
+                        <p><strong id="day3-condition"></strong></p>
+                    </div>
+                    <p id="day3-temp"></p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3 id="day4"></h3>
+                    <div>
+                        <img id="day4-img" alt="Weather img">
+                        <p><strong id="day4-condition"></strong></p>
+                    </div>
+                    <p id="day4-temp"></p>
+                </div>
+
+                <div class="day-forcast">
+                    <h3 id="day5"></h3>
+                    <div>
+                        <img id="day5-img" alt="Weather img">
+                        <p><strong id="day5-condition"></strong></p>
+                    </div>
+                    <p id="day5-temp"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="town-events">
+        </div>
+
+        <div class="article">
+            <h2>Preston Idaho History</h2>
+             <p class="article-content">In 1866, Latter-day Saint pioneers arrived in the northern end of the Cache Valley,
+                stretching across southeastern Idaho and northeastern Utah. They founded a community in that location
+                and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt
+                Lake City objected to the name "Worm Creek" being part of any church congregation's name. The name
+                Preston was suggested by a local member to honor William B. Preston, who at the time was president of
+                the LDS Church's Cache Stake.
+            </p>
+            
+            <p class="article-content"> It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward
+                that a regular townsite was laid out.For several years the city held a "Napoleon Dynamite Festival" in
+                the summer. Many of the featured festival themes related to events occurring during the film. For
+                example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, Impersonation, Look-A-Like
+                Contest, Football Throwing Contest and more. In 2004 there was a single day event that drew
+                approximately 300 people. Although this was not a large crowd, it did help raise $1,500 for the Preston
+                School District Education Foundation. In 2005 an estimated 6,000 people attended the event and although
+                the event was considered a success the town has decided not to continue it.
+            </p>
+
+            <p class="article-content">The 2007 and 2008 event was held along with the 'That Famous Preston Night Rodeo' in Preston. 'That
+                Famous Preston Night Rodeo' is usually held in late July, along with the Franklin County parade. The
+                rodeo's name ('That Famous Preston Night Rodeo') comes from it being the first rodeo held during night
+                time. It includes many events such as bull riding, barrel racing, and other popular events. The Franklin
+                county parade includes floats and advertisements of local businesses. The rodeo and parade remain one of
+                the town's most popular local events and traditions.
+            </p>
+        </div>
+
+
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Phone: (123)-456-7890</p>
+            <p>email: weather123@weather<br>checknow.com</p>
+            <p>Address: 1234 Weather St. Preston ID, 98765 USA</p>
+        </div>
+        <div class="location-map">
+            <img src="preson-images/rsz_11map.png" alt="Location Map">
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a href="index.html">WeatherCheckNow.com</a> |<a
+                href="attributions.html"> Attributions </a>| BYU-Idaho</p>
+        <p id="datemod"></p>
+    </footer>
+
+</body>
+
+</html>

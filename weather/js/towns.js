@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
 
     src = ['preson-images/soda-springs-resize.jpg', 'preson-images/fish-haven-resize.jpg', 'preson-images/preston-resize.jpg']

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <link rel="stylesheet" href="css/preston-style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body onload="toggleMenu(), pancakes()">
+    <div id="pancakes" class="pancakes">
+        <strong>Preston Pancakes in the Park!</strong>
+        <br> 9:00 a.m. Saturday at the park pavilion.
+    </div>
+
+    <header class="main-header">
+
+        <figure class="logo"><a href="index.html"><img src="preson-images/weatherlogo.jpg"
+            alt="WeatherCheckNow.com logo"></a></figure>
+    <div>
+            <h1>WeatherCheckNow.com</h1>
+            <p>"Accurate Weather Anytime, Everytime."</p>
+        </div>
+    </header>
+    <div class="nav">
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li class="active"><a href="storm-center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="form-content">
+        <h1 class="form-title">Contact the Storm Center</h1>
+
+        <form class="form" action="thanks.html">
+
+            <div class="full-name">
+                <label for="fname">Full Name:</label><br class="hidden">
+                <input type="text" id="fname" name="fname" maxlength="5">
+            </div>
+
+            <div class="email">
+                <label for="email">Email Address:</label><br class="hidden">
+                <input type="email" id="email" name="email" placeholder="first.lastname@weather.com">
+            </div>
+
+            <div class="phone">
+                <label for="phone">Phone Number:</label><br class="hidden">
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="zip-code">
+                <label for="zip-code">Zip Code:</label><br class="hidden">
+                <input type="number" id="zip-code" name="zip-code" required>
+            </div>
+
+            <div class="storm-date">
+                <label for="storm-date">Storm Date:</label><br class="hidden">
+                <input type="date" id="storm-date" name="storm-date">
+            </div>
+
+            <div class="storm-type">
+                <label for="storm-type">Storm Type:</label><br class="hidden">
+                <input list="storm-types" id="strorm-type" name="storm-type">
+                <datalist id="storm-types">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </div>
+
+            <div class="severity">
+                <label for="storm-severity">Storm Severity (from 1 to 10):</label><br class="hidden">
+                <input type="range" id="storm-severity" list="labels" name="storm-severity" min="1" max="10">
+                <datalist id="labels">
+                    <option value="0" label="1">1</option>
+                    <option value="10" label="10">10</option>
+                </datalist>
+            </div>
+
+            <div class="region">
+                <label for="storm-region">Storm Region:</label><br class="hidden">
+                <select name="storm-region" id="region">
+                    <option disabled="" selected>-- Select Region --</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda-Springs">Soda Springs</option>
+                    <option value="Fish-Haven">Fish Haven</option>
+                </select>
+            </div>
+
+            <div class="danger">
+                <p>User Currently in Danger:</p><br class="hidden">
+                <input type="radio" id="no" name="in-danger" value="No">
+                <label class="no" for="no">No</label>
+                <input type="radio" id="yes" name="in-danger" value="Yes">
+                <label for="yes">Yes</label>
+            </div>
+
+            <div class="additional-comments">
+                <label for="addition-comments">Additional Comments:</label><br>
+                <input class="textarea" type="textarea" name="additional-comments" row="100" cols="500">
+            </div>
+
+            <div class="submit">
+                <label for="submit"><strong>Submit Form</strong></label><br class="hidden">
+                <input type="submit" name="submit">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a href="index.html">WeatherCheckNow.com</a> |<a href="attributions.html"> Attributions </a>| BYU-Idaho</p>
+        <p id="datemod"></p>
+    </footer>
+
+</body>
+
+</html>
