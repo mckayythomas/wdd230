@@ -180,6 +180,10 @@
         text-align: center;
         font-size: 3vw;
     }
+
+    .hidden-storm-center {
+        display: none;
+    }
 }    
 
 @media screen and (min-width: 600px) {

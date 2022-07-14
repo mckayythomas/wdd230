@@ -25,7 +25,7 @@ header {
     background-color: #241623;
     display: flex;
     justify-content: left;
-    padding: 20px
+    padding: 20px;
 }
 
 .logo img {
@@ -47,6 +47,11 @@ header div p {
     margin-top: -12px;
     color: #f18f01;
 
+}
+
+.nav {
+    position: sticky;
+    z-index: 1;
 }
 
 nav ul li {
