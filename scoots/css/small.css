@@ -1,0 +1,136 @@
+@media screen and (max-width: 750px) {
+    body {
+        background-size: 325%;
+    }
+
+    .home-content {
+        margin: 3vh 5vw 3vh 5vw;
+    }
+
+    header h1{
+        font-size: 6vw;
+        padding-top: 15px;
+    }
+
+    .nav nav {
+        margin: 0;
+    }
+
+    .nav nav ul  {
+        display: block;
+        padding:0;
+    }
+
+    nav ul li {
+        padding: 15px;
+    }
+
+    .navigation {
+        display: block;
+        justify-items: center;
+        text-align: center;
+        flex: 1 1 100%;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .navigation li:first-child {
+        display: block;
+        border-style: solid; 
+        background-color: #e7dfd9;
+    }
+
+    .navigation li:first-child a {
+        color:#463740;
+    }
+
+    .navigation li:first-child:hover {
+        background-color: #463740;
+    }
+
+    .navigation li:first-child:hover a {
+        color: #e7dfd9;
+    }
+
+    .navigation li {
+        display: none;
+        margin: 0;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .current-weather-info {
+        float: none;
+        font-size: 2vw;
+
+    }
+
+    .current-weather-info div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .current-weather-info div p {
+        margin: 3px 25px 3px 25px;
+    }
+
+    .current-weather-info p:first-child {
+        margin-top: 3px;
+    }
+
+    .five-day-forcast-data {
+        flex-wrap: wrap;
+    }
+
+    .five-day-forcast-data div {
+        font-size: 3vw;
+    }
+
+    .locations-title {
+        font-size: 4vw;
+    }
+
+    .puerta-maya {
+        flex-direction: column;
+    }
+
+    .puerta-maya-div {
+        margin-right: 0;
+        font-size: 2.5vw;
+    }
+
+    .playa-del-carmen {
+        flex-direction: column;
+    }
+
+    .playa-del-carmen-div {
+        margin-left: 0;
+        font-size: 2.5vw;
+    }
+
+    .contact-info {
+        font-size: 2.5vw;
+        max-width: fit-content;
+    }
+
+    .twitter {
+        margin-bottom: -6px;
+        max-width: 15%;
+    }
+
+    .facebook {
+        margin-bottom: -9px;
+        max-width: 19%;
+    }
+
+    .instagram {
+        margin-bottom: -6px;
+        max-width: 16%;
+    }
+
+    footer {
+        font-size: 2.8vw;;
+    }
+}

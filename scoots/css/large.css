@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px ) {
+    body {
+        background-size: 123%;
+    }
+
+    .home-content {
+        margin: 12vh 15vw 12vh 15vw;
+    }
+
+    .five-day-forcast-data div {
+        margin: 5px 1.5vw 5px 1.5vw;
+    }
+
+    header h1 {
+        padding-top: 10px;
+        font-size: 3.5vw;
+    }
+    
+    footer {
+        font-size: 2.5vw;
+    }
+}
