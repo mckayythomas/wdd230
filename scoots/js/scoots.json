@@ -2,16 +2,16 @@
     "rentals": [
         {
             "model": "Honda Metro Scooter",
-            "max-persons": 1,
+            "maxpersons": 1,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$20",
-                    "full-day": "$30"
+                    "halfday": "$20",
+                    "fullday": "$30"
                  },
-                 "walk-in": {
-                    "half-day": "$25",
-                    "full-day": "$35"
+                 "walkin": {
+                    "halfday": "$25",
+                    "fullday": "$35"
                  }   
                 }
             ],
@@ -20,16 +20,16 @@
 
         {
             "model": "Honda Dio Scooter",
-            "max-persons": 2,
+            "maxpersons": 2,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$30",
-                    "full-day": "$40"
+                    "halfday": "$30",
+                    "fullday": "$40"
                  },
-                 "walk-in": {
-                    "half-day": "$35",
-                    "full-day": "$45"
+                 "walkin": {
+                    "halfday": "$35",
+                    "fullday": "$45"
                  }   
                 }
             ],
@@ -38,16 +38,16 @@
 
         {
             "model": "Honda PCX150 Scooter",
-            "max-persons": 2,
+            "maxpersons": 2,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$40",
-                    "full-day": "$50"
+                    "halfday": "$40",
+                    "fullday": "$50"
                  },
-                 "walk-in": {
-                    "half-day": "$45",
-                    "full-day": "$55"
+                 "walkin": {
+                    "halfday": "$45",
+                    "fullday": "$55"
                  }   
                 }
             ],
@@ -56,16 +56,16 @@
 
         {
             "model": "Honda Pioneer 1000",
-            "max-persons": 4,
+            "maxpersons": 4,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$50",
-                    "full-day": "$70"
+                    "halfday": "$50",
+                    "fullday": "$70"
                  },
-                 "walk-in": {
-                    "half-day": "$60",
-                    "full-day": "$80"
+                 "walkin": {
+                    "halfday": "$60",
+                    "fullday": "$80"
                  }   
                 }
             ],
@@ -74,16 +74,16 @@
 
         {
             "model": "4-door Jeep Wrangler-manual  with a/c",
-            "max-persons": 5,
+            "maxpersons": 5,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$70",
-                    "full-day": "$100"
+                    "halfday": "$70",
+                    "fullday": "$100"
                  },
-                 "walk-in": {
-                    "half-day": "$85",
-                    "full-day": "$125"
+                 "walkin": {
+                    "halfday": "$85",
+                    "fullday": "$125"
                  }   
                 }
             ],
@@ -92,16 +92,16 @@
 
         {
             "model": "2-door Jeep Wrangler-manual open air",
-            "max-persons": 4,
+            "maxpersons": 4,
             "price": [
                 {
                  "reservation": {
-                    "half-day": "$60",
-                    "full-day": "$85"
+                    "halfday": "$60",
+                    "fullday": "$85"
                  },
-                 "walk-in": {
-                    "half-day": "$70",
-                    "full-day": "$90"
+                 "walkin": {
+                    "halfday": "$70",
+                    "fullday": "$90"
                  }   
                 }
             ],
