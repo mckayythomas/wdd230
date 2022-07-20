@@ -1,3 +1,36 @@
+@media screen and (max-width: 220px) {
+    .contact-us-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-name,
+    .email,
+    .phone,
+    .rental-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0 10px 0;
+    }
+
+    .full-name label,
+    .full-name input,
+    .email label,
+    .email input,
+    .phone label,
+    .phone input,
+    .rental-type label,
+    .rental-type select {
+        margin: 0 10vw 0 10vw;
+    }
+    
+    .comments textarea,
+    .comments label {
+        margin: 0 1.5vw 0 1.5vw;
+    }
+}
+
 @media screen and (max-width: 750px) {
     body {
         background-size: 325%;
@@ -11,7 +44,7 @@
         margin: 3vh 5vw 3vh 5vw;
     }
 
-    header h1{
+    header h1 {
         font-size: 6vw;
         padding-top: 15px;
     }
@@ -20,9 +53,9 @@
         margin: 0;
     }
 
-    .nav nav ul  {
+    .nav nav ul {
         display: block;
-        padding:0;
+        padding: 0;
     }
 
     nav ul li {
@@ -40,12 +73,12 @@
 
     .navigation li:first-child {
         display: block;
-        border-style: solid; 
+        border-style: solid;
         background-color: #e7dfd9;
     }
 
     .navigation li:first-child a {
-        color:#463740;
+        color: #463740;
     }
 
     .navigation li:first-child:hover {
@@ -135,24 +168,13 @@
     }
 
     footer {
-        font-size: 2.8vw;;
+        font-size: 2.8vw;
+        ;
     }
 
     /* SMALL CONTACT CSS */
-    .contact-us-form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .full-name, .email, .phone, .rental-type {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 10px 0 10px 0;
-    }
-
-    .comments {
-        text-align: center;
+    .contact-hidded {
+        display: none;
     }
 
     div.submit {
@@ -161,37 +183,44 @@
         text-align: center;
     }
 
-    .form-hidden {
-        display: none;
-    }
-
-    /* tours CSS */
-    .tours-main {
-        display: flex;
+    .card0 {
         flex-direction: column;
-        justify-items: center;
+        margin: 40px 0 40px 0;
+        gap: 10px;
     }
 
-    .tours, .reservation-body {
-        background-size: 600%;
-    }
-
-    .tours1, .tours2, .tours3, .tours4, .tours5, .tours6, .tours7, .tours8 {
-        align-items: center;
-        margin: 0 6vw 0 6vw;
-    }
-    .comments textarea {
-        width: 55vw;
-    }
-
-    /* RESERVATION SMALL CSS */
-    .reservation {
-        align-content: center;
+    .card1 {
         flex-direction: column;
+        margin: 40px 0 40px 0;
+        gap: 10px;
     }
 
-    .reservation-body main h1 {
-        text-align: center;
+    .card2 {
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+        gap: 10px;
+    }
+
+    .card3 {
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+        gap: 10px;
+    }
+
+    .card4 {
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+        gap: 10px;
+    }
+
+    .card5 {
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+        gap: 10px;
+    }
+
+    .rentals-body {
+        background-size: 470%;
     }
 
 }
@@ -209,9 +238,10 @@
         align-items: center;
     }
 
-    .puerta-maya-map h2, .playa-del-carmen-map h2 {
+    .puerta-maya-map h2,
+    .playa-del-carmen-map h2 {
         margin-bottom: 30px;
-    }    
+    }
 
     .form-contact-info {
         display: grid;
@@ -224,5 +254,47 @@
 
     .submit input {
         margin-left: 24vw;
+    }
+
+    /* tours CSS */
+    .tours-main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .tours,
+    .reservation-body {
+        background-size: 600%;
+    }
+
+    .tours1,
+    .tours2,
+    .tours3,
+    .tours4,
+    .tours5,
+    .tours6,
+    .tours7,
+    .tours8 {
+        align-items: center;
+        margin: 0 6vw 0 6vw;
+    }
+
+    .comments textarea {
+        width: 55vw;
+    }
+
+    .form-hidden {
+        display: none;
+    }
+
+    /* RESERVATION SMALL CSS */
+    .reservation {
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .reservation-body main h1 {
+        text-align: center;
     }
 }

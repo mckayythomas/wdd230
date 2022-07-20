@@ -26,4 +26,18 @@
     .send-reservation {
         flex-direction: column;
     }
+
+    .reservation-info {
+        margin: 0 9vw 0 9vw;
+    }
+
+    .rentals-body {
+        background-size: 192%;
+    }
+}
+
+@media screen and (max-width: 95px) {
+    .form-hidden {
+        display: none;
+    }    
 }

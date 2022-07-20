@@ -22,8 +22,9 @@
 
 <body class="reservation-body" onload="toggleMenu()">
     <header class="main-header">
-        <picture class="logo"><a href="index.html"><img
-                    src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png"></a></picture>
+        <figure class="logo"><a href="index.html"><img
+                    src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png" alt="Scoots logo"></a>
+        </figure>
         <div>
             <h1>Scoots Rentals</h1>
             <p>"Escape the Drama of Tourism and Discover the Beauty of Cozumel!"</p>
@@ -45,91 +46,93 @@
     <main>
         <h1>Make A Reservation</h1>
 
-        <form class="reservation" action="confirmation.html">
-            <div class="reservation-full-name">
-                <label for="fname">Full Name:</label><br class="form-hidden">
-                <input type="text" id="fname" name="fname" maxlength="15" placeholder="John Doe" required>
-            </div>
-
-            <div class="reservation-email">
-                <label for="email">Email Address:</label><br class="form-hidden">
-                <input type="email" id="email" name="email" placeholder="first.lastname@email.com" required>
-            </div>
-
-            <div class="reservation-phone">
-                <label for="phone">Phone Number:</label><br class="form-hidden">
-                <input type="tel" id="phone" name="phone" placeholder="(---) --- ----">
-            </div>
-
-            <div class="reservation-id">
-                <label for="identification">Id or Passport Number:</label><br class="form-hidden">
-                <input type="number" maxlength="8" min="0" id="identification" size="30" required>
-            </div>
-
-            <div class="reservation-country">
-                <label for="inputCountry">Home Country:</label><br class="form-hidden">
-                <input type="country" id="inputCountry" placeholder="Country" required>
-            </div>
-
-            <div class="reservation-city">
-                <label for="inputCity">Home City:</label><br class="form-hidden">
-                <input type="city" id="inputCity" placeholder="City" required>
-            </div>
-
-            <div class="reservation-rental-type">
-                <label for="rental-type">Desired Rental:</label><br class="form-hidden">
-                <select id="rental-type" name="rental-type" required>
-                    <option disabled="" selected>-----Select Rental Type-----</option>
-                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
-                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
-                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
-                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
-                    <option value="Jeep Wrangler 4-door">Jeep Wrangler 4-door</option>
-                    <option value="Jeep Wrangler 2-door">Jeep Wrangler 2-door</option>
-                </select>
-            </div>
-
-            <div class="reservaion-location">
-                <p>Scoots Location:</p>
-                <input type="radio" id="playa-del-carmen" name="location" value="Playa Del Carmen" required>
-                <label class="playa-del-carmen-location" for="playa-del-carmen">Playa Del Carmen</label>
-                <input type="radio" id="puerta-maya-location" name="location" value="Puerta Maya" required>
-                <label for="puerta-maya">Puerta Maya</label>
-            </div>
-
-            <div class="reservation-date">
-                <div class="reservation-date1">
-                    <label for="start-date">From:</label><br class="form-hidden">
-                    <input type="date" id="start-date" name="start-date" size="30">
+        <div class="reservation-info">
+            <form class="reservation" action="confirmation.html">
+                <div class="reservation-full-name">
+                    <label for="fname">Full Name:</label><br class="form-hidden">
+                    <input type="text" id="fname" name="fname" maxlength="15" placeholder="John Doe" required>
                 </div>
 
-                <div class="reservation-date2">
-                    <label for="end-date">To:</label><br class="form-hidden">
-                    <input type="date" id="end-date" name="end-date" size="30">
-                </div>
-            </div>
-
-            <div class="reservation-special-requests">
-                <label for="special-request">Special Requests/ Instructions</label><br>
-                <textarea id="special-request" name="special-request" cols="40" rows="10"></textarea>
-            </div>
-
-            <div class="send-reservation">
-                <br>
-                <div>
-                    <input type="checkbox" id="terms-and-condtions" name="terms-and-condtions"
-                        value="terms-and-condtions" required>
-                    <label for="terms-and-condtions"> I have read and understand the terms and condions</label><br>
-                    <input type="checkbox" id="agree" name="agree" value="agree" required>
-                    <label for="agree"> I agree to the terms and conditions</label><br class="form-hidden">
+                <div class="reservation-email">
+                    <label for="email">Email Address:</label><br class="form-hidden">
+                    <input type="email" id="email" name="email" placeholder="first.lastname@email.com" required>
                 </div>
 
-                <div class="make-reservation">
-                    <label for="make-reservation"></label>
-                    <input type="submit" name="make-reservation" id="make-reservation" value="Make Reservation">
+                <div class="reservation-phone">
+                    <label for="phone">Phone Number:</label><br class="form-hidden">
+                    <input type="tel" id="phone" name="phone" placeholder="(---) --- ----">
                 </div>
-            </div>
-        </form>
+
+                <div class="reservation-id">
+                    <label for="identification">Id or Passport Number:</label><br class="form-hidden">
+                    <input type="number" min="0" id="identification" required>
+                </div>
+
+                <div class="reservation-country">
+                    <label for="inputCountry">Home Country:</label><br class="form-hidden">
+                    <input type="text" id="inputCountry" required>
+                </div>
+
+                <div class="reservation-city">
+                    <label for="inputCity">Home City:</label><br class="form-hidden">
+                    <input type="text" id="inputCity" required>
+                </div>
+
+                <div class="reservation-rental-type">
+                    <label for="rental-type">Desired Rental:</label><br class="form-hidden">
+                    <select id="rental-type" name="rental-type" size="7" required>
+                        <option disabled="" selected>-----Select Rental Type-----</option>
+                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler 4-door">Jeep Wrangler 4-door</option>
+                        <option value="Jeep Wrangler 2-door">Jeep Wrangler 2-door</option>
+                    </select>
+                </div>
+
+                <div class="reservaion-location">
+                    <p>Scoots Location:</p>
+                    <input type="radio" id="playa-del-carmen" name="location" value="Playa Del Carmen" required>
+                    <label class="playa-del-carmen-location" for="playa-del-carmen">Playa Del Carmen</label>
+                    <input type="radio" id="puerta-maya" name="location" value="Puerta Maya" required>
+                    <label for="puerta-maya">Puerta Maya</label>
+                </div>
+
+                <div class="reservation-date">
+                    <div class="reservation-date1">
+                        <label for="start-date">From:</label><br class="form-hidden">
+                        <input type="date" id="start-date" name="start-date" size="30">
+                    </div>
+
+                    <div class="reservation-date2">
+                        <label for="end-date">To:</label><br class="form-hidden">
+                        <input type="date" id="end-date" name="end-date" size="30">
+                    </div>
+                </div>
+
+                <div class="reservation-special-requests">
+                    <label for="special-request">Special Requests/ Instructions</label><br>
+                    <textarea id="special-request" name="special-request" cols="40" rows="10"></textarea>
+                </div>
+
+                <div class="send-reservation">
+                    <br>
+                    <div>
+                        <input type="checkbox" id="terms-and-condtions" name="terms-and-condtions"
+                            value="terms-and-condtions" required>
+                        <label for="terms-and-condtions"> I have read and understand the terms and condions</label><br>
+                        <input type="checkbox" id="agree" name="agree" value="agree" required>
+                        <label for="agree"> I agree to the terms and conditions</label><br class="form-hidden">
+                    </div>
+
+                    <div class="make-reservation">
+                        <label for="make-reservation"></label>
+                        <input type="submit" name="make-reservation" id="make-reservation" value="Make Reservation">
+                    </div>
+                </div>
+            </form>
+        </div>
         <br><br><br>
         <div class="reservation-agreement">
             <h2>Reservation Terms and Conditions</h2>

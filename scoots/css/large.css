@@ -20,6 +20,10 @@
         font-size: 2.5vw;
     }
 
+    .rentals-body {
+        background-size: 165%;
+    }
+
     .tours {
         background-size: 145%;
     }

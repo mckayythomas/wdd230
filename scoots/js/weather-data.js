@@ -1,4 +1,4 @@
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c78aa2048fa7d286e4c1c542c60adca2&units=imperial"
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?lat=20.4230&lon=86.9223&appid=c78aa2048fa7d286e4c1c542c60adca2&units=imperial"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -10,7 +10,7 @@ fetch(apiURL)
         document.getElementById('condition').textContent = ' ' + jsObject.weather[0].main;
     });
 
-    const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&cnt=40&appid=c78aa2048fa7d286e4c1c542c60adca2&units=imperial"
+    const forcastURL = "http://api.openweathermap.org/data/2.5/forecast?lat=20.4230&lon=86.9223&cnt=40&appid=c78aa2048fa7d286e4c1c542c60adca2&units=imperial"
     fetch(forcastURL)
         .then((response) => response.json())
         .then((jsObject) => {
@@ -20,7 +20,7 @@ fetch(apiURL)
             document.querySelector('div.five-day-forcast').appendChild(divFiveDay);
             divFiveDay.setAttribute('class', 'five-day-forcast-data');
             for (let i = 0; i < 40; i++) {
-                let timeCheck = '18:00:00'
+                let timeCheck = '12:00:00'
                 if (jsObject.list[i].dt_txt.includes(timeCheck)) {
                     let weekday = new Date(jsObject.list[i].dt_txt).toLocaleString('en-us', { weekday: 'long' });
                     //console.log(weekday);
