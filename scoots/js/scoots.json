@@ -1,0 +1,111 @@
+{
+    "rentals": [
+        {
+            "model": "Honda Metro Scooter",
+            "max-persons": 1,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$20",
+                    "full-day": "$30"
+                 },
+                 "walk-in": {
+                    "half-day": "$25",
+                    "full-day": "$35"
+                 }   
+                }
+            ],
+            "img": "https://powersports.honda.com/-/media/products/family/metropolitan/trims/trim-main/metropolitan/2023/2023-metropolitan-blue_metallic-650x380.png"
+        },
+
+        {
+            "model": "Honda Dio Scooter",
+            "max-persons": 2,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$30",
+                    "full-day": "$40"
+                 },
+                 "walk-in": {
+                    "half-day": "$35",
+                    "full-day": "$45"
+                 }   
+                }
+            ],
+            "img": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/colors/honda-dio-2021-naranja-e02915.png?width=1082"
+        },
+
+        {
+            "model": "Honda PCX150 Scooter",
+            "max-persons": 2,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$40",
+                    "full-day": "$50"
+                 },
+                 "walk-in": {
+                    "half-day": "$45",
+                    "full-day": "$55"
+                 }   
+                }
+            ],
+            "img": "https://flux.somosmoto.pe/r/https://somosmoto.pe/images/models/colors/honda-pcx-150-2017-blanco-6203be.png?width=1082"
+        },
+
+        {
+            "model": "Honda Pioneer 1000",
+            "max-persons": 4,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$50",
+                    "full-day": "$70"
+                 },
+                 "walk-in": {
+                    "half-day": "$60",
+                    "full-day": "$80"
+                 }   
+                }
+            ],
+            "img": "https://motos.honda.com.co/images/cms/1-Pioneer_1000_5_Limited_Edition_BROWN.png"
+        },
+
+        {
+            "model": "4-door Jeep Wrangler-manual  with a/c",
+            "max-persons": 5,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$70",
+                    "full-day": "$100"
+                 },
+                 "walk-in": {
+                    "half-day": "$85",
+                    "full-day": "$125"
+                 }   
+                }
+            ],
+            "img": "https://images.carprices.com/pricebooks_data/usa/colorized/2021/Jeep/View2/Wrangler/Unlimited_Sport_RHD/JLUL74_PSC.png"
+        },
+
+        {
+            "model": "2-door Jeep Wrangler-manual open air",
+            "max-persons": 4,
+            "price": [
+                {
+                 "reservation": {
+                    "half-day": "$60",
+                    "full-day": "$85"
+                 },
+                 "walk-in": {
+                    "half-day": "$70",
+                    "full-day": "$90"
+                 }   
+                }
+            ],
+            "img": "https://www.jeep.pe/wp-content/uploads/sites/4/2020/08/WranglerRubicon_GrisGranito-2.png"
+        }
+    ]
+}
