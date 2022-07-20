@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/scoots.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="contact-us" onload="toggleMenu()">
+    <header class="main-header">
+        <picture class="logo"><a href="index.html"><img
+                    src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png"></a></picture>
+        <div>
+            <h1>Scoots Rentals</h1>
+            <p>"Escape the Drama of Tourism and Discover the Beauty of Cozumel!"</p>
+        </div>
+    </header>
+
+    <div class="nav">
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="contact-form">
+        <div class="form-general-info">
+            <h1>Available Rentals</h1>
+            <p>If you have any questions about our listed rentals or policies, don't hesitate to send us a message using
+                the form below. We are available by phone from 9am - 2pm EST.</p>
+            <div class="scooters-form">
+                <h2>Scooters:</h2>
+                <ul>
+                    <li>Honda Metro Scooter</li>
+                    <li>Honda Dio Scooter</li>
+                    <li>Honda PCX150 Scooter</li>
+                </ul>
+            </div>
+            <div class="four-wheeled-form">
+                <h2>4 Wheeled:</h2>
+                <ul>
+                    <li>Honda Pioneer ATV</li>
+                    <li>Jeep Wrangler 4-door</li>
+                    <li>Jeep Wrangler 2-door</li>
+                </ul>
+            </div>
+            <p class="details-form">For pricing and detailed information visit our <a href="rental.html">rentals page
+                    here</a>.</p>
+        </div>
+
+        <h1 class="contact-us-title">Contact Us</h1>
+        <div>
+            <form class="contact-us-form" action="thankyou.html">
+
+                <div class="full-name">
+                    <label for="fname">Full Name:</label><br class="form-hidden">
+                    <input type="text" id="fname" name="fname" maxlength="15" placeholder="John Doe" size="30" required>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email Address:</label><br class="form-hidden">
+                    <input type="email" id="email" name="email" placeholder="first.lastname@email.com" size="30"
+                        required>
+                </div>
+
+                <div class="phone">
+                    <label for="phone">Phone Number:</label><br class="form-hidden">
+                    <input type="tel" id="phone" name="phone" placeholder="(---) --- ----" size="30">
+                </div>
+
+                <div class="rental-type">
+                    <label for="rental-type">I'm Requesting Information for:</label><br class="form-hidden">
+                    <select id="rental-type" name="rental-type">
+                        <option disabled="" selected>--------Select Rental Type--------</option>
+                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler 4-door">Jeep Wrangler 4-door</option>
+                        <option value="Jeep Wrangler 2-door">Jeep Wrangler 2-door</option>
+                    </select>
+                </div>
+
+                <div class="comments">
+                    <label for="comments">Comments, Questions, or feedback:</label>
+                    <textarea id="comments" class="textarea" name="comments" cols="40" rows="10"></textarea>
+                </div>
+
+                <div class="submit">
+                    <label for="submit"></label><br class="form-hidden">
+                    <input type="submit" name="submit" id="submit" value="Send Form">
+                </div>
+            </form>
+        </div>
+        <div class="maps">
+            <div class="playa-del-carmen-map">
+                <h2>Playa del Carmen Map</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14947.53474334527!2d-86.95827411443042!3d20.510993881571082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2spe!4v1658231972962!5m2!1sen!2spe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="puerta-maya-map">
+                <h2>Puerta Maya Map</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14950.97773048018!2d-86.98405431444006!3d20.475687381880693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2spe!4v1658232022573!5m2!1sen!2spe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-contact-info">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +52 987 435 455</p>
+                    <p>Email: scoots_official@scootscozumel.com</p>
+                    <p>See what people are saying about us on social media!</p>
+                </div>
+                <div class="social-media">
+                    <picture class="twitter"><a href="www.twitter.com"><img src="scoots-images/twitter-logo.png"
+                                alt="Twitter logo"></a></picture>
+                    <picture class="facebook"><a href="www.facebook.com"><img src="scoots-images/facebook-logo.png"
+                                alt="Facebook logo"></a></picture>
+                    <picture class="instagram"><a href="www.instagram.com"><img src="scoots-images/instagram-logo.png"
+                                alt="Instagram logo"></a></picture>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a href="index.html">Scoots Official</a> |<a
+                href="attributions.html"> Attributions </a>| BYU-Idaho</p>
+        <p id="datemod"></p>
+    </footer>
+</body>
+
+</html>

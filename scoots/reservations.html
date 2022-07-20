@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/scoots.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="reservation-body" onload="toggleMenu()">
+    <header class="main-header">
+        <picture class="logo"><a href="index.html"><img
+                    src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png"></a></picture>
+        <div>
+            <h1>Scoots Rentals</h1>
+            <p>"Escape the Drama of Tourism and Discover the Beauty of Cozumel!"</p>
+        </div>
+    </header>
+
+    <div class="nav">
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Make A Reservation</h1>
+
+        <form class="reservation" action="confirmation.html">
+            <div class="reservation-full-name">
+                <label for="fname">Full Name:</label><br class="form-hidden">
+                <input type="text" id="fname" name="fname" maxlength="15" placeholder="John Doe" required>
+            </div>
+
+            <div class="reservation-email">
+                <label for="email">Email Address:</label><br class="form-hidden">
+                <input type="email" id="email" name="email" placeholder="first.lastname@email.com" required>
+            </div>
+
+            <div class="reservation-phone">
+                <label for="phone">Phone Number:</label><br class="form-hidden">
+                <input type="tel" id="phone" name="phone" placeholder="(---) --- ----">
+            </div>
+
+            <div class="reservation-id">
+                <label for="identification">Id or Passport Number:</label><br class="form-hidden">
+                <input type="number" maxlength="8" min="0" id="identification" size="30" required>
+            </div>
+
+            <div class="reservation-country">
+                <label for="inputCountry">Home Country:</label><br class="form-hidden">
+                <input type="country" id="inputCountry" placeholder="Country" required>
+            </div>
+
+            <div class="reservation-city">
+                <label for="inputCity">Home City:</label><br class="form-hidden">
+                <input type="city" id="inputCity" placeholder="City" required>
+            </div>
+
+            <div class="reservation-rental-type">
+                <label for="rental-type">Desired Rental:</label><br class="form-hidden">
+                <select id="rental-type" name="rental-type" required>
+                    <option disabled="" selected>-----Select Rental Type-----</option>
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler 4-door">Jeep Wrangler 4-door</option>
+                    <option value="Jeep Wrangler 2-door">Jeep Wrangler 2-door</option>
+                </select>
+            </div>
+
+            <div class="reservaion-location">
+                <p>Scoots Location:</p>
+                <input type="radio" id="playa-del-carmen" name="location" value="Playa Del Carmen" required>
+                <label class="playa-del-carmen-location" for="playa-del-carmen">Playa Del Carmen</label>
+                <input type="radio" id="puerta-maya-location" name="location" value="Puerta Maya" required>
+                <label for="puerta-maya">Puerta Maya</label>
+            </div>
+
+            <div class="reservation-date">
+                <div class="reservation-date1">
+                    <label for="start-date">From:</label><br class="form-hidden">
+                    <input type="date" id="start-date" name="start-date" size="30">
+                </div>
+
+                <div class="reservation-date2">
+                    <label for="end-date">To:</label><br class="form-hidden">
+                    <input type="date" id="end-date" name="end-date" size="30">
+                </div>
+            </div>
+
+            <div class="reservation-special-requests">
+                <label for="special-request">Special Requests/ Instructions</label><br>
+                <textarea id="special-request" name="special-request" cols="40" rows="10"></textarea>
+            </div>
+
+            <div class="send-reservation">
+                <br>
+                <div>
+                    <input type="checkbox" id="terms-and-condtions" name="terms-and-condtions"
+                        value="terms-and-condtions" required>
+                    <label for="terms-and-condtions"> I have read and understand the terms and condions</label><br>
+                    <input type="checkbox" id="agree" name="agree" value="agree" required>
+                    <label for="agree"> I agree to the terms and conditions</label><br class="form-hidden">
+                </div>
+
+                <div class="make-reservation">
+                    <label for="make-reservation"></label>
+                    <input type="submit" name="make-reservation" id="make-reservation" value="Make Reservation">
+                </div>
+            </div>
+        </form>
+        <br><br><br>
+        <div class="reservation-agreement">
+            <h2>Reservation Terms and Conditions</h2>
+            <h4>Scoots Terms and Conditions of Rental Agreement to Hire Rental Vehicle</h4>
+            <p>
+                The Rental Agreement comprises these terms and conditions and the rental document setting out the hire
+                details which is provided with each Vehicle at the point of hire (referred to in these terms and
+                conditions as the “Rental Document”). The Rental Agreement is made between AVR Myanmar Limited (herein
+                referred to as “the Lessor”) and the person and/or company signing the Rental Document (herein referred
+                to as “the Renter”) whose particulars are recorded in the Rental Document. It is hereby agreed as
+                follows:</p>
+            <br>
+            <h4>Vehicle Description and Term of Hire</h4>
+            <p> 1. The Lessor will let and the Renter will take the motor Vehicle, details of which are described in the
+                Rental Document (herein referred to as “the Vehicle”), for the term of hire as described in the Rental
+                Document.</p>
+            <br>
+            <h4>Persons Who May Drive the Rental</h4>
+            <p> 2. The Vehicle may be driven during the term of hire only by the persons named on the Rental Document or
+                in a supplementary driver’s sheet attached to the Rental Agreement, and only if they hold a current full
+                valid driver’s license appropriate for the Vehicle while they are using the Vehicle.</p>
+            <br>
+            <h4>Payments By Renter</h4>
+            <p> 3. The Renter shall pay the Lessor for the hire of the Vehicle the sum or sums specified in the Rental
+                Document; and authorizes the Lessor to charge all amounts payable to the Renter’s account. The Renter’s
+                account means a nominated debit card, credit card, or pre-arranged charge account.<br>
+                4. In addition to the payment specified in clause 3 above, the Renter acknowledges that they shall be
+                liable at the end of the hire term to pay to the Lessor any applicable additional charges payable at the
+                end of the term. These include, but are not limited to:<br>
+                a) a fee to cover additional drivers;<br>
+                b) a surcharge for drivers under the age of 25;<br>
+                c) additional charges for distance driven (as specified in the Rental Document for every kilometre
+                run);<br>
+                d) charges for petrol or other fuel used (but not oil);<br>
+                e) road user charges;<br>
+                f) charges for late return of the Vehicle;<br>
+                g) charges for damage to or repair of the Vehicle (subject to the other terms of the Rental Agreement);
+                and any enforcement charges relating to such damage or repairs (including legal costs). The Renter shall
+                bear the USD 200 deductible for any damages and repair unless the Renter has purchased the additional
+                coverage;<br>
+                h) charges for cleaning the Vehicle’s interior if the Vehicle is returned in an excessively dirty
+                condition that requires extra cleaning or deodorizing. This includes, but is not limited to, spillage of
+                fluids, food, vomit, other stains, and unpleasant odours including cigarette smoke;<br>
+                i) traffic and/or parking offence infringement fees;<br>
+                j) the administration fees as specified in the Rental Agreement; and<br>
+                k) any surcharges in connection with the use of a debit or credit card by the Renter.<br>
+                5. The Lessor will charge the amounts set out in clauses 3 and 4 above to the Renter’s account during or
+                after the term of hire is completed, or the Renter may pay such charges as agreed with the Lessor, such
+                choice to be at the Lessor’s sole discretion.<br>
+                6. If the Renter fails to pay any money due under or in connection with the Rental Agreement within 14
+                days of the date by which the Renter was required to pay the money, the Lessor may, without prejudice to
+                any other rights or remedies the Lessor may have or be entitled to, charge the Renter and the Renter
+                must pay all additional costs as outlined below:<br>
+                (a) penalty charge at 10% (compounded daily) on the total amount owing from the expiry of 14 days from
+                the date on which the Renter was required to pay the money to the date of payment;<br>
+                (b) all costs incurred by the Lessor for the collection of the unpaid money by a debt collection agency
+                or other external or legal agency; and<br>
+                (c) an administration fee of USD 50 plus commercial tax.</p>
+            <br>
+            <h4>Use of the Vehicle</h4>
+            <p> 7. The Renter shall not:<br>
+                a) use or allow the Vehicle to be used for the transport of passengers for hire or reward unless the
+                Vehicle is hired with the Lessor’s knowledge for use in a passenger service;<br>
+                b) sublet or hire the Vehicle to any other person;<br>
+                c) allow the Vehicle to be used outside his/her authority;<br>
+                d) operate the Vehicle or allow it to be operated in circumstances that constitute an offence against
+                the law (which relates to driving under the influence of alcohol or drugs);<br>
+                e) operate the Vehicle or allow it to be operated in any race, speed test, reliability trial, rally or
+                contest, or operated on any race or rally circuit or in any event as a pace-maker or testing in
+                preparation for any of them;<br>
+                f) operate the Vehicle, or allow it to be operated, in breach of rules and regulations or bylaws
+                relating to road traffic;<br>
+                g) operate the Vehicle or allow it to be operated for the transport of more passengers or goods than the
+                maximum specified in the certificate of loading and/or road user charge certificate, whichever is the
+                lesser, for the Vehicle;<br>
+                h) drive or allow the Vehicle to be driven by any person if at the time of driving the Vehicle the
+                driver does not hold a current full valid driver’s license appropriate for the Vehicle;<br>
+                i) drive or allow the Vehicle to be driven on any roads excluded in clause 22(q) of these terms and
+                conditions, or on any beach, driveway, or surface likely to damage the Vehicle;<br>
+                j) allow the Vehicle to be driven by any person who is not named or described in the Rental Document as
+                a person permitted to drive the Vehicle;<br>
+                k) operate the Vehicle or allow it to be operated to propel or tow any other Vehicle;<br>
+                l) transport any animal in the Vehicle (with the exception of guide dogs for visually impaired
+                people);<br>
+                m) operate or allow the Vehicle to be used in involvement with any illegal activity; or<br>
+                n) allow any person to smoke in the Vehicle.</p>
+            <br>
+            <h4>Renters Obligations</h4>
+            <p> 8. The Renter shall ensure that:<br>
+                a) all reasonable care is taken when driving and parking the Vehicle;<br>
+                b) the water in the Vehicle’s radiator and battery is maintained at the proper level;<br>
+                c) the oil in the Vehicle is maintained at the proper level;<br>
+                d) only the fuel type specified for the Vehicle will be used;<br>
+                e) the tyres are maintained at their proper pressure;<br>
+                f) the Vehicle is locked and secure at all times when it is not in use and the keys kept under the
+                Renter’s personal control at all times;<br>
+                g) the distance recorder or speedometer are not interfered with;<br>
+                h) no part of the engine, transmission, braking or suspension systems are interfered with;<br>
+                i) should a warning light be illuminated or the Renter believes the Vehicle requires mechanical
+                attention, the Renter will stop driving and advise the Lessor immediately;<br>
+                j) all drivers authorised to use this Vehicle during the term of hire are aware of and comply with the
+                terms outlined in the Rental Agreement; and<br>
+                k) any authorised driver carries their driver’s license with them in the Vehicle at all times and will
+                produce it on demand to any enforcement officer.</p>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a href="index.html">Scoots Official</a> |<a
+                href="attributions.html"> Attributions </a>| BYU-Idaho</p>
+        <p id="datemod"></p>
+    </footer>
+</body>
+
+</html>

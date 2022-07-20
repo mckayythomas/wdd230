@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!</title>
+    <script defer src="js/date.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/scoots.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="toggleMenu()">
+    <header class="main-header">
+        <picture class="logo"><a href="index.html"><img
+                    src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png"></a></picture>
+        <div>
+            <h1>Scoots Rentals</h1>
+            <p>"Escape the Drama of Tourism and Discover the Beauty of Cozumel!"</p>
+        </div>
+    </header>
+
+    <div class="nav">
+        <nav>
+            <ul class="navigation responsive">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="thank-you">
+            <h1>Your Reservation Has Been Confirmed!</h1>
+            <p>You should receive a confirmation email at the one provided for your reservation.<br><br>
+            To make another reservation <a href="reservations.html">Click Here</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span> | McKay Thomas | Arequipa | <a href="index.html">Scoots Official</a> |<a
+                href="attributions.html"> Attributions </a>| BYU-Idaho</p>
+        <p id="datemod"></p>
+    </footer>
+</body>
+
+</html>

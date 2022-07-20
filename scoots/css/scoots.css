@@ -81,7 +81,7 @@ body {
     background-position: center;
 }
 
-.home-content {
+main {
     background-color: #e7dfd9cc;
     z-index: 1;
     margin: 10vw 14vw 10vw 14vw;
@@ -268,4 +268,232 @@ footer a {
 
 .active a {
     color: #463740;
+}
+
+/* ATTRIBUTIONS CSS*/
+
+.attributions {
+    text-align: center;
+    margin: 175px;
+}
+
+.attributions li {
+    list-style: none;
+}
+
+/* FORM CSS */
+
+.form-general-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-general-info h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.form-general-info p {
+    grid-column: 1/3;
+
+}
+
+.scooters-form {
+    grid-column: 1/2;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    padding: 20px 9vw 20px 9vw;
+}
+
+.four-wheeled-form {
+    grid-column: 2/3;
+    margin: 20px 0 20px 0;
+    padding: 20px 9vw 20px 9vw;
+}
+
+.details-form {
+    text-align: center;
+}
+
+.details-form a {
+    color: #107D90;
+}
+
+.contact-us-title{
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.contact-us-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+    justify-items: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.full-name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.email {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.phone {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.rental-type {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.comments {
+    grid-column: 2/3;
+    grid-row: 1/5;
+}
+
+.submit {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    text-align: center;
+}
+
+.submit, .comments, .rental-type, .phone, .email, .full-name {
+    max-width: 100%;
+}
+
+.maps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0 20px 0;
+}
+
+.puerta-maya-map {
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: center;
+    margin: 15px;
+}
+
+.puerta-maya-map h2, .playa-del-carmen-map h2 {
+    margin: 10px;
+}
+
+.puerta-maya-map iframe {
+    max-width: 100%;
+
+}
+
+.playa-del-carmen-map {
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+    margin: 15px;
+}
+
+.playa-del-carmen-map iframe {
+    max-width: 100%;
+}
+
+.form-contact-info {
+    grid-column: 1/3;
+    display: grid;
+}
+
+.form-contact-info .contact-info {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.form-contact-info .social-media {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+/* THANK YOU CSS*/
+
+.thank-you {
+    margin: 150px;
+    text-align: center;
+}
+
+.thank-you h1{
+    font-size: 6vw;
+}
+
+.thank-you p {
+    font-size: 2vw;
+}
+
+/* TOURS CSS */
+
+.tours-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.tours1 picture img, .tours2 picture img, .tours3 picture img,
+.tours4 picture img,.tours5 picture img, .tours6 picture img,
+.tours7 picture img, .tours8 picture img, .tours9 picture img {
+    max-width: 100%;
+}
+
+.tours-main h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.tours1 {
+    grid-column: 1/2;
+}
+.tours3 {
+    grid-column: 1/2;
+}
+.tours5 {
+    grid-column: 1/2;
+}
+.tours7 {
+    grid-column: 1/2;
+}
+
+.tours2 {
+    grid-column: 2/3;
+}
+.tours4 {
+    grid-column: 2/3;
+}
+.tours6 {
+    grid-column: 2/3;
+}
+.tours8 {
+    grid-column: 2/3;
+}
+
+/* RESERVATIONS CSS */
+.reservation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+label {
+    font-family: 'Oswald', courier;
+    font-weight: 500;
+}
+
+.reservation-date {
+    display: flex;
+    gap: 20px;
+}
+
+.send-reservation {
+    gap: 20px;
 }

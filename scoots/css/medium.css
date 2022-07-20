@@ -11,4 +11,19 @@
         font-size: 2vw;
     }
 
+    .tours {
+        background-size: 200%;
+    }
+
+    .reservation-body {
+        background-size: 380%;
+    }
+
+    .contact-us {
+        background-size: 235%;
+    }
+
+    .send-reservation {
+        flex-direction: column;
+    }
 }

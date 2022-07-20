@@ -3,7 +3,7 @@
         background-size: 123%;
     }
 
-    .home-content {
+    main {
         margin: 12vh 15vw 12vh 15vw;
     }
 
@@ -19,4 +19,17 @@
     footer {
         font-size: 2.5vw;
     }
+
+    .tours {
+        background-size: 145%;
+    }
+
+    .reservation-body {
+        background-size: 250%;
+    }
+
+    .send-reservation {
+        flex-direction: column;
+    }
+
 }

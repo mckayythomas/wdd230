@@ -3,7 +3,11 @@
         background-size: 325%;
     }
 
-    .home-content {
+    .form {
+        background-size: 360%;
+    }
+
+    main {
         margin: 3vh 5vw 3vh 5vw;
     }
 
@@ -132,5 +136,93 @@
 
     footer {
         font-size: 2.8vw;;
+    }
+
+    /* SMALL CONTACT CSS */
+    .contact-us-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .full-name, .email, .phone, .rental-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 0 10px 0;
+    }
+
+    .comments {
+        text-align: center;
+    }
+
+    div.submit {
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-hidden {
+        display: none;
+    }
+
+    /* tours CSS */
+    .tours-main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .tours, .reservation-body {
+        background-size: 600%;
+    }
+
+    .tours1, .tours2, .tours3, .tours4, .tours5, .tours6, .tours7, .tours8 {
+        align-items: center;
+        margin: 0 6vw 0 6vw;
+    }
+    .comments textarea {
+        width: 55vw;
+    }
+
+    /* RESERVATION SMALL CSS */
+    .reservation {
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .reservation-body main h1 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 845px) {
+    .form-general-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .puerta-maya-map h2, .playa-del-carmen-map h2 {
+        margin-bottom: 30px;
+    }    
+
+    .form-contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-contact-info .contact-info {
+        font-size: 1.75vw;
+    }
+
+    .submit input {
+        margin-left: 24vw;
     }
 }
