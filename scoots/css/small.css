@@ -33,11 +33,16 @@
 
 @media screen and (max-width: 750px) {
     body {
-        background-size: 325%;
+        background-size: 360%;
     }
 
-    .form {
-        background-size: 360%;
+    .tours,
+    .reservation-body {
+        background-size: 710%;
+    }
+
+    .contact-us {
+        background-size: 350%;
     }
 
     main {
@@ -173,7 +178,7 @@
     }
 
     /* SMALL CONTACT CSS */
-    .contact-hidded {
+    .contact-hidden {
         display: none;
     }
 
@@ -261,11 +266,6 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-    }
-
-    .tours,
-    .reservation-body {
-        background-size: 600%;
     }
 
     .tours1,

@@ -1,6 +1,6 @@
 @media screen and (min-width: 750px) and (max-width: 999px) {
     body {
-        background-size: 152%;
+        background-size: 162%;
     }
 
     header h1 {
@@ -16,11 +16,11 @@
     }
 
     .reservation-body {
-        background-size: 380%;
+        background-size: 420%;
     }
 
     .contact-us {
-        background-size: 235%;
+        background-size: 245%;
     }
 
     .send-reservation {
@@ -36,8 +36,14 @@
     }
 }
 
-@media screen and (max-width: 95px) {
+@media screen and (max-width: 950px) {
     .form-hidden {
         display: none;
-    }    
+    }   
+}
+
+@media screen and (max-width: 845px) {
+    .tours {
+        background-size: 400%;
+    }   
 }

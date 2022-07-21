@@ -20,16 +20,20 @@
         font-size: 2.5vw;
     }
 
+    .contact-us {
+        background-size: 136%;
+    }
+
     .rentals-body {
         background-size: 165%;
     }
 
     .tours {
-        background-size: 145%;
+        background-size: 147%;
     }
 
     .reservation-body {
-        background-size: 250%;
+        background-size: 260%;
     }
 
     .send-reservation {

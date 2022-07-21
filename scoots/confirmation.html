@@ -20,7 +20,7 @@
         rel="stylesheet">
 </head>
 
-<body onload="toggleMenu()">
+<body class="confirmation-body" onload="toggleMenu()">
     <header class="main-header">
         <figure class="logo"><a href="index.html"><img
                     src="scoots-images/favpng_car-scooter-motorcycle-transport-vehicle.png" alt="Scoots logo"></a></figure>
@@ -34,11 +34,11 @@
         <nav>
             <ul class="navigation responsive">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a> </li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li onclick="location.href='index.html'"><a href="index.html">Home</a></li>
+                <li onclick="location.href='rentals.html'"><a href="rentals.html">Rentals</a></li>
+                <li onclick="location.href='reservations.html'"><a href="reservations.html">Reservations</a></li>
+                <li onclick="location.href='tours.html'"><a href="tours.html">Tours</a></li>
+                <li onclick="location.href='contact.html'"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </div>
